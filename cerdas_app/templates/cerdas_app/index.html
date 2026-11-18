@@ -1335,23 +1335,41 @@
         }
     });
 
-    // 6. Muat Foto Asli Iklan OLX secara Asynchronous
+   // 6. Muat Foto Asli Iklan OLX (Coba API Publik OLX dari Browser Pengguna, lalu fallback ke Backend)
     document.querySelectorAll('.vehicle-media-box').forEach(async function(box) {
         const listingId = box.getAttribute('data-listing-id');
         if (!listingId) return;
 
+        function tampilkanFoto(url) {
+            if (!url) return false;
+            const img = box.querySelector('img.real-photo');
+            const fallback = box.querySelector('.fallback-content');
+            img.onload = function() {
+                img.style.display = 'block';
+                if (fallback) fallback.style.display = 'none';
+            };
+            img.src = url;
+            return true;
+        }
+
         try {
+            // Jalur 1: Ambil langsung dari API item OLX via browser pengunjung (IP Indonesia)
+            const olxResp = await fetch(`https://www.olx.co.id/api/relevance/v4/items/${encodeURIComponent(listingId)}`);
+            if (olxResp.ok) {
+                const olxData = await olxResp.json();
+                const images = olxData?.data?.images || [];
+                if (images.length > 0) {
+                    const imgUrl = images[0]?.medium?.url || images[0]?.big?.url || images[0]?.url;
+                    if (tampilkanFoto(imgUrl)) return;
+                }
+            }
+        } catch (e) {}
+
+        try {
+            // Jalur 2: Fallback ke endpoint backend Django
             const resp = await fetch(`/api/foto-olx/${encodeURIComponent(listingId)}/`);
             const data = await resp.json();
-            if (data.image_url) {
-                const img = box.querySelector('img.real-photo');
-                const fallback = box.querySelector('.fallback-content');
-                img.onload = function() {
-                    img.style.display = 'block';
-                    if (fallback) fallback.style.display = 'none';
-                };
-                img.src = data.image_url;
-            }
+            tampilkanFoto(data.image_url);
         } catch (err) {}
     });
 
