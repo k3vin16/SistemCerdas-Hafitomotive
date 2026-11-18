@@ -1335,25 +1335,75 @@
         }
     });
 
-   // 6. Muat Foto Asli Iklan OLX dari Backend (Otomatis fallback ke kartu ilustrasi jika iklan sudah terjual/diblokir)
-    document.querySelectorAll('.vehicle-media-box').forEach(async function(box) {
-        const listingId = box.getAttribute('data-listing-id');
-        if (!listingId) return;
+   // 6. Muat Foto Asli Iklan OLX -> Fallback ke Foto Unit Model dari Wikimedia Commons
+    const cacheFotoModel = {};
+
+    async function ambilFotoModelWikimedia(judulKendaraan, jenisKendaraan) {
+        const kunci = judulKendaraan.toLowerCase().trim();
+        if (cacheFotoModel[kunci] !== undefined) return cacheFotoModel[kunci];
 
         try {
-            const resp = await fetch(`/api/foto-olx/${encodeURIComponent(listingId)}/`);
-            if (!resp.ok) return;
+            const query = encodeURIComponent(judulKendaraan);
+            const urlWiki = `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${query}&gsrlimit=1&prop=pageimages&piprop=thumbnail&pithumbsize=640&format=json&origin=*`;
+            const resp = await fetch(urlWiki);
             const data = await resp.json();
-            if (data.image_url) {
-                const img = box.querySelector('img.real-photo');
-                const fallback = box.querySelector('.fallback-content');
-                img.onload = function() {
-                    img.style.display = 'block';
-                    if (fallback) fallback.style.display = 'none';
-                };
-                img.src = data.image_url;
+            const pages = data?.query?.pages;
+            if (pages) {
+                const firstPage = Object.values(pages)[0];
+                const thumb = firstPage?.thumbnail?.source || null;
+                cacheFotoModel[kunci] = thumb;
+                return thumb;
             }
-        } catch (err) {}
+        } catch (e) {}
+
+        cacheFotoModel[kunci] = null;
+        return null;
+    }
+
+    document.querySelectorAll('.vehicle-media-box').forEach(async function(box) {
+        const listingId = box.getAttribute('data-listing-id');
+        const img = box.querySelector('img.real-photo');
+        const fallback = box.querySelector('.fallback-content');
+        const judulEl = fallback ? fallback.querySelector('.fw-bold') : null;
+        const namaModel = judulEl ? judulEl.textContent.replace(/\(\d{4}\)/g, '').trim() : '';
+
+        function pasangGambar(url, isIlustrasi = false) {
+            if (!url || !img) return;
+            img.onload = function() {
+                img.style.display = 'block';
+                if (fallback) fallback.style.display = 'none';
+                if (isIlustrasi && !box.querySelector('.badge-ilustrasi')) {
+                    const badge = document.createElement('span');
+                    badge.className = 'badge-ilustrasi position-absolute bottom-0 start-0 m-2 px-2 py-1 rounded';
+                    badge.style.cssText = 'background: rgba(16, 36, 58, 0.78); color: #E2E8F0; font-size: 0.68rem; backdrop-filter: blur(4px);';
+                    badge.textContent = 'Referensi Model';
+                    box.appendChild(badge);
+                }
+            };
+            img.src = url;
+        }
+
+        // Langkah 1: Coba foto asli iklan OLX dari backend
+        if (listingId) {
+            try {
+                const resp = await fetch(`/api/foto-olx/${encodeURIComponent(listingId)}/`);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data.image_url) {
+                        pasangGambar(data.image_url, false);
+                        return;
+                    }
+                }
+            } catch (err) {}
+        }
+
+        // Langkah 2: Fallback otomatis ke foto referensi model kendaraan (Wikimedia API, mendukung CORS)
+        if (namaModel) {
+            const fotoWiki = await ambilFotoModelWikimedia(namaModel);
+            if (fotoWiki) {
+                pasangGambar(fotoWiki, true);
+            }
+        }
     });
 
     // 7. Filter Cepat Katalog OLX (Kata Kunci, Transmisi, dan Status Harga)
