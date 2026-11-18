@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "regions": ["sin1"],
   "builds": [
     {
       "src": "proyek_sistem_cerdas/wsgi.py",
