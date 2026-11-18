@@ -1,0 +1,1457 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAFITOMOTIVE — Drive with Better Insights.</title>
+    <link rel="icon" type="image/png" href="{% static 'cerdas_app/assets/logo-hafitomotive.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --deep-navy: #10243A;
+            --premium-navy: #183B63;
+            --steel-blue: #244F7D;
+            --electric-blue: #1677FF;
+            --light-blue: #4095FF;
+            --soft-blue: #DCEBFF;
+            --bg-main: #F4F6F9;
+            --surface: #FFFFFF;
+            --border-color: #E5EAF0;
+            --text-primary: #17212F;
+            --text-secondary: #687586;
+            --success: #16A36A;
+            --warning: #E6A23C;
+            --danger: #D94B4B;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        section[id], #hasil-prediksi {
+            scroll-margin-top: 92px;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .container-max {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* ================= NAVBAR MINIMALIS & PROFESIONAL (72px) ================= */
+        .navbar-premium {
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--border-color);
+            min-height: 72px;
+            box-shadow: 0 2px 10px rgba(16, 36, 58, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+        }
+
+        .brand-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--deep-navy);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.24rem;
+            letter-spacing: -0.01em;
+        }
+
+        .brand-logo-img {
+            width: 44px;
+            height: 44px;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 50%;
+            background-color: #0B192C;
+            flex-shrink: 0;
+        }
+
+        .brand-logo-text span {
+            color: var(--electric-blue);
+        }
+
+        .nav-link-custom {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: color 0.2s ease, background-color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link-custom:hover {
+            color: var(--electric-blue);
+            background-color: rgba(22, 119, 255, 0.06);
+        }
+
+        .nav-link-custom.active {
+            color: var(--electric-blue);
+        }
+
+        .nav-link-custom.active::after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 14px;
+            right: 14px;
+            height: 2.5px;
+            background-color: var(--electric-blue);
+            border-radius: 2px;
+        }
+
+        /* ================= HERO SECTION FULL-WIDTH BANNER ================= */
+        .hero-wrapper-full {
+            background: linear-gradient(125deg, #0B192C 0%, #10243A 55%, #183B63 100%);
+            color: #FFFFFF;
+            padding: 64px 0 92px;
+            margin-bottom: -48px;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 800;
+            line-height: 1.16;
+            color: #FFFFFF;
+            margin-bottom: 18px;
+            max-width: 540px;
+        }
+
+        .hero-title .accent {
+            color: var(--light-blue);
+        }
+
+        .hero-subtitle {
+            color: #CBD5E1;
+            font-size: 1.03rem;
+            font-weight: 400;
+            line-height: 1.65;
+            max-width: 520px;
+            margin-bottom: 32px;
+        }
+
+        .btn-hero-primary {
+            background-color: var(--electric-blue);
+            border: 1.5px solid var(--electric-blue);
+            color: #FFFFFF;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 13px 24px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-hero-primary:hover {
+            background-color: var(--light-blue);
+            border-color: var(--light-blue);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(22, 119, 255, 0.32);
+        }
+
+        .btn-hero-secondary {
+            background-color: transparent;
+            border: 1.5px solid rgba(255, 255, 255, 0.35);
+            color: #FFFFFF;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 13px 24px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-hero-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .hero-car-img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: block;
+        }
+
+        .hero-tech-strip {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 14px;
+            padding: 0 4px;
+            font-size: 0.8rem;
+            color: #94A3B8;
+        }
+
+        .hero-tech-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-tech-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--light-blue);
+        }
+
+        /* ================= TIGA TUJUAN UTAMA WEBSITE (FLOATING CARD) ================= */
+        .pillars-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 28px 32px;
+            margin-bottom: 36px;
+            box-shadow: 0 10px 28px rgba(16, 36, 58, 0.06);
+            position: relative;
+            z-index: 10;
+        }
+
+        .pillar-col {
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .pillar-col:not(:last-child)::after {
+                content: "";
+                position: absolute;
+                top: 8px;
+                bottom: 8px;
+                right: 0;
+                width: 1px;
+                background-color: var(--border-color);
+            }
+        }
+
+        .pillar-icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background-color: var(--soft-blue);
+            color: var(--electric-blue);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+
+        .pillar-step {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: var(--electric-blue);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .pillar-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            margin-bottom: 6px;
+        }
+
+        .pillar-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            line-height: 1.55;
+        }
+
+        /* ================= UI COMPONENT STANDARDS ================= */
+        .card-premium {
+            background-color: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(16, 36, 58, 0.03);
+        }
+
+        .chart-canvas-box {
+            position: relative;
+            width: 100%;
+            height: 250px;
+        }
+
+        .chart-canvas-box-wide {
+            position: relative;
+            width: 100%;
+            height: 270px;
+        }
+
+        .btn-electric {
+            background-color: var(--electric-blue);
+            border-color: var(--electric-blue);
+            color: #FFFFFF;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 12px 22px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-electric:hover {
+            background-color: var(--light-blue);
+            border-color: var(--light-blue);
+            color: #FFFFFF;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(22, 119, 255, 0.22);
+        }
+
+        .form-select-premium {
+            height: 50px;
+            border: 1px solid #CBD5E1;
+            border-radius: 9px;
+            font-size: 0.96rem;
+            color: var(--text-primary);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-select-premium:focus {
+            border-color: var(--electric-blue);
+            box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.14);
+        }
+
+        .category-switcher {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background-color: var(--bg-main);
+            padding: 6px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .category-tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+
+        .category-tab:hover {
+            color: var(--deep-navy);
+        }
+
+        .category-tab.active {
+            background-color: var(--deep-navy);
+            color: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(16, 36, 58, 0.12);
+        }
+
+        /* ================= RESULT & GROQ AI BOX ================= */
+        .result-highlight-card {
+            background: linear-gradient(135deg, #F0F7FF 0%, var(--soft-blue) 100%);
+            border: 1.5px solid var(--electric-blue);
+            border-radius: 14px;
+            padding: 24px;
+        }
+
+        .price-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: clamp(28px, 3.5vw, 38px);
+            font-weight: 800;
+            color: var(--deep-navy);
+            letter-spacing: -0.02em;
+        }
+
+        .ai-insight-box {
+            background-color: #F8FAFC;
+            border-left: 4px solid var(--electric-blue);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 0.86rem;
+            color: var(--text-primary);
+            white-space: pre-line;
+        }
+
+        /* ================= KATALOG OLX CARD ================= */
+        .vehicle-media-box {
+            height: 168px;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--steel-blue) 100%);
+            color: #FFFFFF;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vehicle-media-box.motor {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #1E4E5F 100%);
+        }
+
+        .vehicle-media-box img.real-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .catalog-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+            overflow: hidden;
+        }
+
+        .catalog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(16, 36, 58, 0.08);
+        }
+
+        .badge-status-hemat {
+            background-color: rgba(22, 163, 106, 0.95);
+            color: #FFFFFF;
+        }
+
+        .badge-status-atas {
+            background-color: rgba(230, 162, 60, 0.95);
+            color: #17212F;
+        }
+
+        .spec-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.74rem;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background-color: var(--bg-main);
+            color: var(--deep-navy);
+            border: 1px solid var(--border-color);
+        }
+
+        /* ================= KPI CARDS ================= */
+        .kpi-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 18px 20px;
+            height: 100%;
+        }
+
+        .kpi-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: var(--soft-blue);
+            color: var(--electric-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ================= TENTANG & FOOTER LOGO ================= */
+        .about-logo-img {
+            width: 76px;
+            height: 76px;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 50%;
+            background-color: #0B192C;
+            flex-shrink: 0;
+        }
+
+        .footer-logo-img {
+            width: 54px;
+            height: 54px;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 50%;
+            background-color: #0B192C;
+            flex-shrink: 0;
+        }
+
+        .footer-premium {
+            background-color: var(--deep-navy);
+            color: #CBD5E1;
+            padding: 40px 0 32px;
+            margin-top: 64px;
+        }
+
+        /* ================= RESPONSIVE HP & TABLET ================= */
+        @media (max-width: 991.98px) {
+            .navbar-premium .navbar-collapse {
+                flex-basis: 100%;
+                width: 100%;
+            }
+            .nav-link-custom {
+                padding: 10px 12px;
+                display: block;
+            }
+            .nav-link-custom.active {
+                background-color: rgba(22, 119, 255, 0.08);
+            }
+            .nav-link-custom.active::after {
+                left: 0;
+                right: auto;
+                top: 8px;
+                bottom: 8px;
+                width: 3px;
+                height: auto;
+            }
+            .hero-wrapper-full {
+                padding: 40px 0 72px;
+                margin-bottom: -36px;
+            }
+            .navbar-premium {
+                min-height: 68px;
+            }
+            .brand-logo-img {
+                width: 40px;
+                height: 40px;
+            }
+            .pillars-card {
+                padding: 22px 20px;
+            }
+            .chart-canvas-box {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR MINIMALIS & PROFESIONAL ================= -->
+<nav class="navbar navbar-expand-lg navbar-premium">
+    <div class="container-max d-flex flex-wrap align-items-center justify-content-between w-100">
+        <a href="#beranda" class="brand-logo">
+            <img src="{% static 'cerdas_app/assets/logo-hafitomotive.png' %}" alt="Logo HAFITOMOTIVE" class="brand-logo-img">
+            <div class="brand-logo-text">HAFI<span>TOMOTIVE</span></div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-lucide="menu" style="width: 24px; height: 24px; color: var(--deep-navy);"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <div class="d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-1 gap-lg-2 pt-3 pt-lg-0 pb-2 pb-lg-0 border-top border-lg-0 mt-2 mt-lg-0">
+                <a href="#beranda" class="nav-link-custom active">Beranda</a>
+                <a href="#prediksi" class="nav-link-custom">Prediksi Harga</a>
+                {% if is_post %}
+                <a href="#katalog" class="nav-link-custom">Jelajahi Unit OLX</a>
+                {% endif %}
+                <a href="#analisis" class="nav-link-custom">Analisis Pasar</a>
+                <a href="#tentang" class="nav-link-custom">Tentang Sistem</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION FULL-WIDTH BANNER ================= -->
+<section id="beranda" class="hero-wrapper-full">
+    <div class="container-max">
+        <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-6">
+                <h1 class="hero-title">
+                    Temukan Nilai Terbaik dari <span class="accent">Kendaraan Impianmu.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Temukan kendaraan bekas yang sesuai dengan kebutuhan dan anggaranmu. Dapatkan gambaran harga pasar, bandingkan pilihan kendaraan, dan buat keputusan sebelum membeli atau menjual.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#prediksi" class="btn btn-hero-primary d-inline-flex align-items-center gap-2">
+                        <i data-lucide="calculator" style="width: 18px; height: 18px;"></i>
+                        <span>Mulai Prediksi Harga</span>
+                    </a>
+                    <a href="#analisis" class="btn btn-hero-secondary d-inline-flex align-items-center gap-2">
+                        <i data-lucide="bar-chart-3" style="width: 18px; height: 18px;"></i>
+                        <span>Lihat Analisis Pasar</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Kendaraan Modern HAFITOMOTIVE" class="hero-car-img">
+                <div class="hero-tech-strip">
+                    <span class="hero-tech-item"><span class="hero-tech-dot"></span>Random Forest</span>
+                    <span class="hero-tech-item"><span class="hero-tech-dot"></span>Groq LLM</span>
+                    <span class="hero-tech-item"><span class="hero-tech-dot"></span>OLX Jatim</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-max">
+
+    <!-- ================= TIGA TUJUAN UTAMA WEBSITE (FLOATING CARD) ================= -->
+    <section aria-label="Tujuan Utama HAFITOMOTIVE" class="pillars-card">
+        <div class="row g-4">
+            <div class="col-md-4 pillar-col pe-md-4">
+                <div class="pillar-icon-wrap">
+                    <i data-lucide="search" style="width: 20px; height: 20px;"></i>
+                </div>
+                <div class="pillar-step">01. Eksplorasi</div>
+                <h2 class="pillar-title">Temukan Kendaraan</h2>
+                <p class="pillar-desc">Cari mobil dan motor bekas sesuai kebutuhan dan preferensimu.</p>
+            </div>
+
+            <div class="col-md-4 pillar-col px-md-4">
+                <div class="pillar-icon-wrap">
+                    <i data-lucide="badge-dollar-sign" style="width: 20px; height: 20px;"></i>
+                </div>
+                <div class="pillar-step">02. Valuasi Pasar</div>
+                <h2 class="pillar-title">Ketahui Estimasi Harga</h2>
+                <p class="pillar-desc">Dapatkan gambaran nilai kendaraan berdasarkan spesifikasi dan kondisi pasar.</p>
+            </div>
+
+            <div class="col-md-4 pillar-col ps-md-4">
+                <div class="pillar-icon-wrap">
+                    <i data-lucide="scale" style="width: 20px; height: 20px;"></i>
+                </div>
+                <div class="pillar-step">03. Keputusan Tepat</div>
+                <h2 class="pillar-title">Bandingkan Pilihan</h2>
+                <p class="pillar-desc">Pertimbangkan berbagai pilihan kendaraan sebelum menentukan keputusan terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PREDIKSI HARGA & HASIL VALUASI ================= -->
+    <section id="prediksi" class="mb-5">
+        <div class="card-premium p-4 p-md-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+                <div>
+                    <h3 class="h4 mb-1" style="color: var(--deep-navy);">Estimasi Harga & Valuasi Kendaraan</h3>
+                    <p class="text-secondary small mb-0">Cukup pilih <strong>Merek</strong> dan <strong>Model / Seri</strong> kendaraan di bawah ini untuk mengetahui harga pasar wajar sekaligus melihat semua pilihan unitnya di OLX.</p>
+                </div>
+                <span class="badge px-3 py-2" style="background-color: var(--soft-blue); color: var(--electric-blue); font-weight: 600;">
+                    Mode Aktif: {{ jenis|upper }}
+                </span>
+            </div>
+
+            {% if pesan_error %}
+            <div class="alert d-flex align-items-center gap-2 py-3 mb-4" style="background-color: #FEF2F2; border: 1px solid #FECACA; color: var(--danger); border-radius: 10px;">
+                <i data-lucide="alert-circle" style="width: 20px; height: 20px;"></i>
+                <span>{{ pesan_error }}</span>
+            </div>
+            {% endif %}
+
+            <!-- Selector Kategori Mobil / Motor -->
+            <div class="category-switcher mb-4">
+                <a href="?jenis=mobil#prediksi" class="category-tab {% if jenis == 'mobil' %}active{% endif %}">
+                    <i data-lucide="car" style="width: 18px; height: 18px;"></i>
+                    <span>Mobil Bekas</span>
+                </a>
+                <a href="?jenis=motor#prediksi" class="category-tab {% if jenis == 'motor' %}active{% endif %}">
+                    <i data-lucide="bike" style="width: 18px; height: 18px;"></i>
+                    <span>Motor Bekas</span>
+                </a>
+            </div>
+
+            <!-- Form 2 Input Sederhana (Merek & Model/Seri) -->
+            <form id="formPrediksi" method="POST" action="#hasil-prediksi">
+                {% csrf_token %}
+                <input type="hidden" name="jenis" value="{{ jenis }}">
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="selectMerek" class="form-label fw-semibold small text-uppercase" style="color: var(--text-secondary);">1. Merek Kendaraan</label>
+                        <select id="selectMerek" name="merek" class="form-select form-select-premium" required>
+                            {% for m in opsi.merek %}
+                            <option value="{{ m }}" {% if input_prev.merek == m %}selected{% endif %}>{{ m }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="selectModel" class="form-label fw-semibold small text-uppercase" style="color: var(--text-secondary);">2. Model / Seri Kendaraan</label>
+                        <select id="selectModel" name="model" class="form-select form-select-premium" required>
+                            <!-- Diisi otomatis sesuai Merek -->
+                        </select>
+                    </div>
+                </div>
+
+                <button id="btnSubmitPrediksi" type="submit" class="btn btn-electric w-100 mt-4 d-flex align-items-center justify-content-center gap-2">
+                    <i data-lucide="sparkles" style="width: 18px; height: 18px;"></i>
+                    <span id="btnSubmitText">Hitung Estimasi Harga & Tampilkan Pilihan Unit</span>
+                </button>
+            </form>
+
+            <!-- HASIL PREDIKSI & ANALISIS GROQ AI -->
+            <div id="hasil-prediksi">
+                {% if hasil_prediksi %}
+                <hr class="my-4" style="border-color: var(--border-color);">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="result-highlight-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge" style="background-color: var(--electric-blue); color: #fff;">
+                                        {{ input_prev.merek }} {{ input_prev.model }}
+                                    </span>
+                                    <span class="badge d-inline-flex align-items-center gap-1" style="background-color: var(--deep-navy); color: #fff;">
+                                        <i data-lucide="shield-check" style="width: 13px; height: 13px;"></i>
+                                        Random Forest
+                                    </span>
+                                </div>
+                                <div class="small fw-semibold text-uppercase mt-2" style="color: var(--steel-blue);">Estimasi Harga Pasar Wajar</div>
+                                <div class="price-display my-1">{{ hasil_prediksi }}</div>
+                                <div class="small fw-medium" style="color: var(--premium-navy);">
+                                    Mencakup seluruh varian transmisi & bahan bakar
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-2 small mt-3 pt-3" style="border-top: 1px solid rgba(22, 119, 255, 0.2); color: var(--premium-navy);">
+                                <i data-lucide="info" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;"></i>
+                                <span>{{ ringkasan_spek_acuan }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if saran_deal_ai %}
+                    <div class="col-lg-7">
+                        <div class="ai-insight-box h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-bold d-inline-flex align-items-center gap-2" style="color: var(--deep-navy);">
+                                    <i data-lucide="bot" style="width: 18px; height: 18px; color: var(--electric-blue);"></i>
+                                    Rekomendasi & Analisis Pembelian (Groq AI)
+                                </span>
+                                <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">AI Advisor</span>
+                            </div>
+                            <div>{{ saran_deal_ai }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= JELAJAHI KENDARAAN (HANYA MUNCUL SETELAH PREDIKSI) ================= -->
+    {% if is_post %}
+    <section id="katalog" class="mb-5">
+        <div class="card-premium p-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+                <div>
+                    <div class="d-inline-flex align-items-center gap-2 small fw-bold text-uppercase mb-1" style="color: var(--electric-blue);">
+                        <i data-lucide="shopping-bag" style="width: 15px; height: 15px;"></i>
+                        <span>Integrasi Pasar Riil OLX Jawa Timur</span>
+                    </div>
+                    <h2 class="h4 mb-0" style="color: var(--deep-navy);">Semua Pilihan {{ input_prev.merek }} {{ input_prev.model }} di OLX</h2>
+                    <p class="text-secondary small mb-0">Menampilkan seluruh pilihan unit (AT, MT, maupun varian lainnya) beserta perbandingan harga pasar.</p>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <input type="text" id="filterKeywordKatalog" class="form-control form-control-sm" style="width: 185px; height: 38px; border-radius: 8px;" placeholder="Cari kota / varian...">
+                    {% if opsi_transmisi_katalog %}
+                    <select id="filterTransmisiKatalog" class="form-select form-select-sm" style="width: 165px; height: 38px; border-radius: 8px;">
+                        <option value="semua">Semua Transmisi</option>
+                        {% for tr in opsi_transmisi_katalog %}
+                        <option value="{{ tr|lower }}">{{ tr }}</option>
+                        {% endfor %}
+                    </select>
+                    {% endif %}
+                    <select id="filterStatusKatalog" class="form-select form-select-sm" style="width: 180px; height: 38px; border-radius: 8px;">
+                        <option value="semua">Semua Status Harga</option>
+                        <option value="hemat">Di Bawah Estimasi</option>
+                        <option value="pajak_hidup">Pajak Hidup Saja</option>
+                    </select>
+                </div>
+            </div>
+
+            {% if rekomendasi %}
+            <div id="gridKatalogOLX" class="row g-3">
+                {% for item in rekomendasi %}
+                <div class="col-md-6 col-lg-4 item-katalog-col"
+                     data-search="{{ item.judul|lower }} {{ item.varian|lower }} {{ item.kota|lower }} {{ item.tahun }} {{ item.transmisi|lower }} {{ item.bahan_bakar|lower }}"
+                     data-transmisi="{{ item.transmisi|lower }}"
+                     data-hemat="{% if item.hemat %}1{% else %}0{% endif %}"
+                     data-pajak="{{ item.status_pajak|lower }}">
+                    <div class="catalog-card h-100 d-flex flex-column">
+                        <div class="vehicle-media-box {% if jenis == 'motor' %}motor{% endif %} text-center" data-listing-id="{{ item.id_listing }}">
+                            <img class="real-photo" alt="{{ item.judul }}">
+                            <div class="fallback-content px-3">
+                                <i data-lucide="{% if jenis == 'motor' %}bike{% else %}car-front{% endif %}" style="width: 34px; height: 34px; opacity: 0.9;"></i>
+                                <div class="fw-bold small mt-2">{{ item.judul }} ({{ item.tahun }})</div>
+                            </div>
+                            <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 shadow-sm {% if item.hemat %}badge-status-hemat{% else %}badge-status-atas{% endif %}">
+                                {% if item.hemat %}Di Bawah Estimasi{% else %}Di Atas Estimasi{% endif %}
+                            </span>
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start gap-2">
+                                <h6 class="fw-bold mb-0" style="color: var(--deep-navy);">{{ item.judul }}</h6>
+                                <span class="badge bg-light text-dark border">{{ item.tahun }}</span>
+                            </div>
+                            <div class="text-secondary small mb-2 text-truncate" title="{{ item.varian }}">{{ item.varian }}</div>
+
+                            <!-- Badge Transmisi & Bahan Bakar agar langsung terlihat perbedaannya -->
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="spec-pill">{{ item.transmisi }}</span>
+                                <span class="spec-pill">{{ item.bahan_bakar }}</span>
+                            </div>
+
+                            <div class="fw-bold mb-3" style="font-size: 1.25rem; color: var(--electric-blue);">{{ item.harga_fmt }}</div>
+
+                            <div class="small text-secondary mb-3 d-flex flex-column gap-1">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i data-lucide="gauge" style="width: 14px; height: 14px; color: var(--steel-blue);"></i>
+                                    <span>{{ item.kilometer }} • {{ item.cc }}</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i data-lucide="file-check" style="width: 14px; height: 14px; color: var(--steel-blue);"></i>
+                                    <span>Pajak:
+                                        <strong class="{% if item.status_pajak == 'Hidup' %}text-success{% else %}text-danger{% endif %}">
+                                            {{ item.status_pajak }}
+                                        </strong>
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--steel-blue);"></i>
+                                    <span>{{ item.kota }}, Jawa Timur</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto d-grid gap-2">
+                                <a href="{{ item.url_item }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-electric d-flex align-items-center justify-content-center gap-1 py-2">
+                                    <span>Lihat Iklan di OLX</span>
+                                    <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                                </a>
+                                <a href="{{ item.url_cari }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" style="border-radius: 8px; font-size: 0.78rem;">
+                                    Cari Unit Serupa di Jatim
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="emptyStateKatalog" class="text-center py-4 d-none">
+                <p class="text-secondary mb-0">Tidak ada unit yang sesuai dengan filter cepat di atas. Coba reset filter katalog.</p>
+            </div>
+            {% else %}
+            <div class="text-center py-5">
+                <i data-lucide="search-x" style="width: 36px; height: 36px; color: var(--text-secondary);"></i>
+                <p class="text-secondary mt-2 mb-0">Belum ada unit rekomendasi yang ditampilkan untuk kriteria ini.</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- ================= ANALISIS PASAR (DATA INTELLIGENCE DASHBOARD) ================= -->
+    <section id="analisis" class="mb-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <div>
+                <div class="d-inline-flex align-items-center gap-2 small fw-bold text-uppercase mb-1" style="color: var(--electric-blue);">
+                    <i data-lucide="bar-chart-3" style="width: 15px; height: 15px;"></i>
+                    <span>Market Data Intelligence</span>
+                </div>
+                <h2 class="h4 mb-0" style="color: var(--deep-navy);">Analisis Pasar & Performa Model ({{ jenis|title }})</h2>
+            </div>
+            <span class="text-secondary small">Sumber: Dataset Riil OLX Jawa Timur</span>
+        </div>
+
+        <!-- KPI CARDS -->
+        <div class="row g-3 mb-4">
+            <div class="col-6 col-lg-3">
+                <div class="kpi-card d-flex align-items-center gap-3">
+                    <div class="kpi-icon"><i data-lucide="database" style="width: 20px; height: 20px;"></i></div>
+                    <div>
+                        <small class="text-secondary d-block">Total Dataset ({{ jenis|title }})</small>
+                        <div class="fw-bold fs-5" style="color: var(--deep-navy);">{{ kpi.total_unit }} Unit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="kpi-card d-flex align-items-center gap-3">
+                    <div class="kpi-icon"><i data-lucide="tag" style="width: 20px; height: 20px;"></i></div>
+                    <div>
+                        <small class="text-secondary d-block">Median Harga Pasar</small>
+                        <div class="fw-bold fs-5" style="color: var(--deep-navy);">{{ kpi.median_harga }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="kpi-card d-flex align-items-center gap-3">
+                    <div class="kpi-icon"><i data-lucide="check-circle-2" style="width: 20px; height: 20px;"></i></div>
+                    <div>
+                        <small class="text-secondary d-block">Unit Pajak Hidup</small>
+                        <div class="fw-bold fs-5" style="color: var(--success);">{{ kpi.persen_pajak_hidup }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="kpi-card d-flex align-items-center gap-3">
+                    <div class="kpi-icon"><i data-lucide="activity" style="width: 20px; height: 20px;"></i></div>
+                    <div>
+                        <small class="text-secondary d-block">Akurasi Model (R²)</small>
+                        <div class="fw-bold fs-5" style="color: var(--electric-blue);">{{ metrik.r2 }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 GRAFIK RAPI, SIMETRIS & MUDAH DIANALISA -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="card-premium p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-0" style="color: var(--deep-navy);">Rata-Rata Harga Pasar per Merek Populer</h6>
+                            <small class="text-secondary">Membandingkan posisi nilai pasar antar merek utama di Jawa Timur</small>
+                        </div>
+                        <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">Bar Chart</span>
+                    </div>
+                    <div class="chart-canvas-box-wide">
+                        <canvas id="grafikMerek"></canvas>
+                    </div>
+                    <div class="ai-insight-box mt-3">
+                        <strong>✨ Analisis AI:</strong> {{ insight_grafik.merek }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card-premium p-4 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-0" style="color: var(--deep-navy);">Tren Harga Rata-Rata per Tahun Produksi</h6>
+                            <small class="text-secondary">Pergerakan nilai kendaraan dari tahun lama ke tahun terbaru</small>
+                        </div>
+                        <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">Line Chart</span>
+                    </div>
+                    <div class="chart-canvas-box">
+                        <canvas id="grafikTahun"></canvas>
+                    </div>
+                    <div class="ai-insight-box mt-auto" style="margin-top: 16px !important;">
+                        <strong>✨ Insight Tren:</strong> {{ insight_grafik.tahun }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card-premium p-4 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-0" style="color: var(--deep-navy);">Sebaran Stok Unit per Kota (Jawa Timur)</h6>
+                            <small class="text-secondary">Kota dengan ketersediaan iklan kendaraan bekas terbanyak</small>
+                        </div>
+                        <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">Wilayah</span>
+                    </div>
+                    <div class="chart-canvas-box">
+                        <canvas id="grafikKota"></canvas>
+                    </div>
+                    <div class="ai-insight-box mt-auto" style="margin-top: 16px !important;">
+                        <strong>✨ Insight Wilayah:</strong> {{ insight_grafik.kota }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card-premium p-4 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-0" style="color: var(--deep-navy);">Perbandingan Harga per Sistem Transmisi</h6>
+                            <small class="text-secondary">Selisih harga rata-rata dan nilai tengah (median) antar transmisi</small>
+                        </div>
+                        <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">Komparasi</span>
+                    </div>
+                    <div class="chart-canvas-box">
+                        <canvas id="grafikTransmisi"></canvas>
+                    </div>
+                    <div class="ai-insight-box mt-auto" style="margin-top: 16px !important;">
+                        <strong>✨ Insight Transmisi:</strong> {{ insight_grafik.transmisi }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card-premium p-4 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-0" style="color: var(--deep-navy);">Distribusi Segmen Harga Pasar</h6>
+                            <small class="text-secondary">Kelompok rentang harga yang paling banyak tersedia di pasar</small>
+                        </div>
+                        <span class="badge" style="background-color: var(--soft-blue); color: var(--electric-blue);">Segmen Harga</span>
+                    </div>
+                    <div class="chart-canvas-box">
+                        <canvas id="grafikSegmenHarga"></canvas>
+                    </div>
+                    <div class="ai-insight-box mt-auto" style="margin-top: 16px !important;">
+                        <strong>✨ Insight Segmen:</strong> {{ insight_grafik.segmen }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATA TABLE RINGKASAN MEREK POPULER -->
+        {% if kpi.ringkasan_merek %}
+        <div class="card-premium p-4">
+            <h6 class="mb-3" style="color: var(--deep-navy);">Ringkasan Statistik Merek Terbanyak di Dataset ({{ jenis|title }})</h6>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0" style="font-size: 0.9rem;">
+                    <thead style="background-color: var(--bg-main); color: var(--deep-navy);">
+                        <tr>
+                            <th>Merek</th>
+                            <th>Jumlah Listing</th>
+                            <th>Rata-Rata Harga</th>
+                            <th>Median Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in kpi.ringkasan_merek %}
+                        <tr>
+                            <td class="fw-semibold">{{ row.merek }}</td>
+                            <td>{{ row.jumlah_unit }} unit</td>
+                            <td>{{ row.rata_harga }}</td>
+                            <td class="fw-semibold" style="color: var(--electric-blue);">{{ row.median_harga }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- ================= TENTANG SISTEM ================= -->
+    <section id="tentang">
+        <div class="card-premium p-4 p-md-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="{% static 'cerdas_app/assets/logo-hafitomotive.png' %}" alt="Logo HAFITOMOTIVE" class="about-logo-img">
+                        <div>
+                            <h3 class="h4 mb-0" style="color: var(--deep-navy);">HAFITOMOTIVE</h3>
+                            <div class="small fw-semibold" style="color: var(--electric-blue);">Drive with Better Insights.</div>
+                        </div>
+                    </div>
+                    <p class="text-secondary small mb-3">
+                        HAFITOMOTIVE adalah platform cerdas estimasi nilai pasar dan rekomendasi kendaraan bekas (mobil & motor) berbasis data iklan riil wilayah Jawa Timur. Platform ini menggabungkan pemodelan prediktif klasik dengan penalaran bahasa alami untuk membantu pembeli mengambil keputusan berbasis data.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-light text-dark border py-2 px-3">Python & Django</span>
+                        <span class="badge bg-light text-dark border py-2 px-3">Scikit-Learn Random Forest</span>
+                        <span class="badge bg-light text-dark border py-2 px-3">Groq LLM API</span>
+                        <span class="badge bg-light text-dark border py-2 px-3">OLX Jatim Dataset</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-3 p-md-4 rounded" style="background-color: var(--bg-main); border: 1px solid var(--border-color);">
+                        <h6 class="fw-bold mb-2" style="color: var(--deep-navy);">Informasi Dataset & Batasan Sistem</h6>
+                        <ul class="small text-secondary mb-0 ps-3 d-flex flex-column gap-1">
+                            <li><strong>Sumber Dataset:</strong> Data iklan kendaraan bekas wilayah Jawa Timur dari OLX Indonesia yang telah dibersihkan dari iklan DP kredit.</li>
+                            <li><strong>Metodologi ML:</strong> Random Forest Regressor terpisah untuk kategori mobil dan motor dengan evaluasi R² Score ({{ metrik.r2 }}) dan MAE ({{ metrik.mae_fmt }}).</li>
+                            <li><strong>Batasan Sistem:</strong> Nilai estimasi dihitung berdasarkan profil spesifikasi teknis pasar. Kondisi fisik aktual kendaraan, riwayat servis, dan negosiasi tetap memengaruhi harga transaksi akhir.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-premium">
+    <div class="container-max d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="d-flex align-items-center gap-3">
+            <img src="{% static 'cerdas_app/assets/logo-hafitomotive.png' %}" alt="Logo HAFITOMOTIVE" class="footer-logo-img">
+            <div>
+                <div class="fw-bold text-white fs-5">HAFITOMOTIVE</div>
+                <small style="color: #94A3B8;">Drive with Better Insights. • Estimasi Harga & Rekomendasi Pasar Jawa Timur</small>
+            </div>
+        </div>
+        <div class="small" style="color: #94A3B8;">
+            Powered by Scikit-Learn Random Forest & Groq AI
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    lucide.createIcons();
+
+    window.addEventListener('load', function() {
+        if (window.location.hash === '#hasil-prediksi') {
+            const target = document.getElementById('hasil-prediksi');
+            if (target) {
+                setTimeout(function() {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 120);
+            }
+        }
+    });
+
+    const formPrediksi = document.getElementById('formPrediksi');
+    if (formPrediksi) {
+        formPrediksi.addEventListener('submit', function() {
+            const btn = document.getElementById('btnSubmitPrediksi');
+            const txt = document.getElementById('btnSubmitText');
+            if (btn && txt) {
+                btn.disabled = true;
+                txt.textContent = 'Memproses Valuasi ML & Pilihan Unit...';
+            }
+        });
+    }
+
+    // 1. Grafik Batang: Rata-Rata Harga per Merek
+    new Chart(document.getElementById('grafikMerek').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: JSON.parse('{{ grafik_labels|escapejs }}'),
+            datasets: [{
+                label: 'Rata-rata Harga',
+                data: JSON.parse('{{ grafik_values|escapejs }}'),
+                backgroundColor: ['#10243A', '#183B63', '#244F7D', '#1677FF', '#4095FF', '#69B1FF'],
+                borderRadius: 8,
+                maxBarThickness: 64
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) {
+                            return 'Rata-rata: Rp ' + (ctx.raw / 1000000).toFixed(1) + ' Juta';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: '#E5EAF0' },
+                    ticks: {
+                        callback: function(value) { return 'Rp ' + (value / 1000000).toFixed(0) + ' Jt'; }
+                    }
+                },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+
+    // 2. Grafik Garis: Tren Harga per Tahun Produksi
+    new Chart(document.getElementById('grafikTahun').getContext('2d'), {
+        type: 'line',
+        data: {
+            labels: JSON.parse('{{ tahun_labels|escapejs }}'),
+            datasets: [{
+                label: 'Rata-rata Harga',
+                data: JSON.parse('{{ tahun_values|escapejs }}'),
+                borderColor: '#1677FF',
+                backgroundColor: 'rgba(22, 119, 255, 0.12)',
+                fill: true,
+                tension: 0.35,
+                pointRadius: 4,
+                pointBackgroundColor: '#10243A'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) {
+                            return 'Rata-rata: Rp ' + (ctx.raw / 1000000).toFixed(1) + ' Juta';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    grid: { color: '#E5EAF0' },
+                    ticks: {
+                        callback: function(value) { return 'Rp ' + (value / 1000000).toFixed(0) + ' Jt'; }
+                    }
+                },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+
+    // 3. Horizontal Bar Chart: Sebaran Stok Unit per Kota
+    new Chart(document.getElementById('grafikKota').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: JSON.parse('{{ kota_labels|escapejs }}'),
+            datasets: [{
+                label: 'Jumlah Unit',
+                data: JSON.parse('{{ kota_values|escapejs }}'),
+                backgroundColor: ['#10243A', '#183B63', '#244F7D', '#1677FF', '#4095FF', '#69B1FF'],
+                borderRadius: 6,
+                barThickness: 22
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) { return ctx.raw + ' unit tersedia'; }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    grid: { color: '#E5EAF0' },
+                    ticks: { precision: 0 }
+                },
+                y: { grid: { display: false } }
+            }
+        }
+    });
+
+    // 4. Grouped Bar Chart: Perbandingan Harga per Sistem Transmisi
+    new Chart(document.getElementById('grafikTransmisi').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: JSON.parse('{{ trans_labels_json|escapejs }}'),
+            datasets: [
+                {
+                    label: 'Rata-Rata Harga',
+                    data: JSON.parse('{{ trans_rata_json|escapejs }}'),
+                    backgroundColor: '#1677FF',
+                    borderRadius: 6,
+                    maxBarThickness: 36
+                },
+                {
+                    label: 'Median (Nilai Tengah)',
+                    data: JSON.parse('{{ trans_median_json|escapejs }}'),
+                    backgroundColor: '#10243A',
+                    borderRadius: 6,
+                    maxBarThickness: 36
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: { boxWidth: 12, font: { size: 11 } }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) { return `${ctx.dataset.label}: Rp ${ctx.raw} Jt`; }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: '#E5EAF0' },
+                    ticks: {
+                        callback: function(val) { return 'Rp ' + val + ' Jt'; }
+                    }
+                },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+
+    // 5. Bar Chart: Distribusi Segmen Harga Pasar
+    new Chart(document.getElementById('grafikSegmenHarga').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: JSON.parse('{{ segmen_labels_json|escapejs }}'),
+            datasets: [{
+                label: 'Jumlah Unit',
+                data: JSON.parse('{{ segmen_values_json|escapejs }}'),
+                backgroundColor: '#183B63',
+                hoverBackgroundColor: '#1677FF',
+                borderRadius: 7,
+                maxBarThickness: 48
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) { return ctx.raw + ' unit di segmen ini'; }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: '#E5EAF0' },
+                    ticks: { precision: 0 }
+                },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+
+    // 6. Muat Foto Asli Iklan OLX secara Asynchronous
+    document.querySelectorAll('.vehicle-media-box').forEach(async function(box) {
+        const listingId = box.getAttribute('data-listing-id');
+        if (!listingId) return;
+
+        try {
+            const resp = await fetch(`/api/foto-olx/${encodeURIComponent(listingId)}/`);
+            const data = await resp.json();
+            if (data.image_url) {
+                const img = box.querySelector('img.real-photo');
+                const fallback = box.querySelector('.fallback-content');
+                img.onload = function() {
+                    img.style.display = 'block';
+                    if (fallback) fallback.style.display = 'none';
+                };
+                img.src = data.image_url;
+            }
+        } catch (err) {}
+    });
+
+    // 7. Filter Cepat Katalog OLX (Kata Kunci, Transmisi, dan Status Harga)
+    const inputKeywordKatalog = document.getElementById('filterKeywordKatalog');
+    const selectTransmisiKatalog = document.getElementById('filterTransmisiKatalog');
+    const selectStatusKatalog = document.getElementById('filterStatusKatalog');
+
+    function terapkanFilterKatalog() {
+        const kw = (inputKeywordKatalog ? inputKeywordKatalog.value : '').toLowerCase().trim();
+        const trans = selectTransmisiKatalog ? selectTransmisiKatalog.value : 'semua';
+        const status = selectStatusKatalog ? selectStatusKatalog.value : 'semua';
+        const items = document.querySelectorAll('.item-katalog-col');
+        let tampil = 0;
+
+        items.forEach(function(el) {
+            const teks = el.getAttribute('data-search') || '';
+            const itemTrans = el.getAttribute('data-transmisi') || '';
+            const isHemat = el.getAttribute('data-hemat') === '1';
+            const pajak = el.getAttribute('data-pajak') || '';
+
+            const cocokKw = !kw || teks.includes(kw);
+            const cocokTrans = trans === 'semua' || itemTrans === trans;
+            const cocokStatus =
+                status === 'semua' ||
+                (status === 'hemat' && isHemat) ||
+                (status === 'pajak_hidup' && pajak === 'hidup');
+
+            if (cocokKw && cocokTrans && cocokStatus) {
+                el.classList.remove('d-none');
+                tampil++;
+            } else {
+                el.classList.add('d-none');
+            }
+        });
+
+        const emptyState = document.getElementById('emptyStateKatalog');
+        if (emptyState) {
+            emptyState.classList.toggle('d-none', tampil > 0 || items.length === 0);
+        }
+    }
+
+    if (inputKeywordKatalog) inputKeywordKatalog.addEventListener('input', terapkanFilterKatalog);
+    if (selectTransmisiKatalog) selectTransmisiKatalog.addEventListener('change', terapkanFilterKatalog);
+    if (selectStatusKatalog) selectStatusKatalog.addEventListener('change', terapkanFilterKatalog);
+
+    // 8. Cascading Dropdown Merek -> Model
+    const petaMerekModel = JSON.parse('{{ merek_ke_model_json|escapejs }}');
+    const selectMerek = document.getElementById('selectMerek');
+    const selectModel = document.getElementById('selectModel');
+    const modelAwal = '{{ model_terpilih|escapejs }}';
+
+    function perbaruiOpsiModel(merekDipilih, modelTarget = null) {
+        const daftarModel = petaMerekModel[merekDipilih.trim()] || [];
+        selectModel.innerHTML = '';
+
+        daftarModel.forEach(function(namaModel) {
+            const option = document.createElement('option');
+            option.value = namaModel;
+            option.textContent = namaModel;
+            if (modelTarget && namaModel === modelTarget) {
+                option.selected = true;
+            }
+            selectModel.appendChild(option);
+        });
+    }
+
+    if (selectMerek && selectModel) {
+        perbaruiOpsiModel(selectMerek.value, modelAwal);
+        selectMerek.addEventListener('change', function() {
+            perbaruiOpsiModel(this.value);
+        });
+    }
+
+    // Highlight active nav link on scroll
+    const navLinks = document.querySelectorAll('.nav-link-custom');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        document.querySelectorAll('section[id]').forEach(sec => {
+            const top = sec.offsetTop - 120;
+            if (window.scrollY >= top) current = sec.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (current && link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Tutup otomatis menu hamburger mobile setelah menu diklik
+    document.querySelectorAll('#navMenu .nav-link-custom').forEach(function(link) {
+        link.addEventListener('click', function() {
+            const navCollapse = document.getElementById('navMenu');
+            if (navCollapse && navCollapse.classList.contains('show')) {
+                bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

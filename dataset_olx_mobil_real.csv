@@ -1,0 +1,465 @@
+id_listing,merek,model,varian,tahun,transmisi,kilometer,kapasitas_cc,bahan_bakar,status_pajak,kota,harga
+OLX-949110812,Daihatsu,Xenia,1.3 X Bensin-MT,2017,MT,247500,1500,Bensin,Hidup,Tuban,105000000
+OLX-949325556,Toyota,Fortuner,2.8 VRZ TSS GR Aero Package 4x2 Solar-AT,2024,AT,27500,3000,Diesel,Hidup,Surabaya,550000000
+OLX-949401691,Toyota,Yaris,1.5 TRD Sportivo Bensin-AT,2015,AT,127500,1500,Bensin,Hidup,Surabaya,153000000
+OLX-949454551,Toyota,Kijang Innova,2.4 G Solar-AT,2025,AT,12500,3000,Diesel,Hidup,Malang,380000000
+OLX-948037937,BMW,X3,2.0 sDrive20i Bensin-AT,2021,AT,37500,2000,Bensin,Hidup,Surabaya,575000000
+OLX-949488146,Daihatsu,Luxio,1.5 D Bensin-MT,2016,MT,92500,1500,Bensin,Hidup,Surabaya,122000000
+OLX-949488054,Honda,Brio Satya,1.2 E Bensin-AT,2015,AT,87500,1500,Bensin,Hidup,Surabaya,105000000
+OLX-949487759,Suzuki,Grand vitara,1.5 GX Hybrid-AT,2024,AT,22500,2000,Hybrid,Hidup,Surabaya,295000000
+OLX-949487508,Toyota,Alphard,2.4 Premium Sound Bensin-AT,2012,AT,107500,3000,Bensin,Hidup,Surabaya,235000000
+OLX-948167499,Daihatsu,Terios,1.5 R Deluxe Bensin-AT,2021,AT,12500,2000,Bensin,Hidup,Surabaya,210000000
+OLX-949487465,Toyota,Avanza,1.5 New G Bensin-AT,2022,CVT,92500,1500,Bensin,Hidup,Malang,192000000
+OLX-949487422,Honda,Civic,1.5 ES Bensin-AT,2016,AT,67500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-948167581,Toyota,Avanza,1.3 E Bensin-AT,2024,AT,57500,1500,Bensin,Hidup,Surabaya,200000000
+OLX-949487232,Lexus,RX 270,2.7 Bensin-AT,2011,AT,77500,3000,Bensin,Hidup,Surabaya,175000000
+OLX-949487067,Honda,City,1.5 Hatchback RS Bensin-AT,2022,CVT,32500,1500,Bensin,Hidup,Surabaya,217500000
+OLX-949179445,Toyota,Avanza,1.5 G Bensin-AT,2024,CVT,37500,1500,Bensin,Hidup,Surabaya,225000000
+OLX-949179257,BYD,Seal,Performance AWD Listrik-AT,2024,AT,7500,1000,Listrik,Hidup,Surabaya,535000000
+OLX-949486907,Mini,Cooper,1.5 Bensin-AT,2014,AT,42500,1500,Bensin,Hidup,Surabaya,347500000
+OLX-949486832,Honda,Accord,2.4 VTI-L Bensin-AT,2014,AT,87500,3000,Bensin,Hidup,Surabaya,175000000
+OLX-949391979,Mitsubishi,Colt,3.9 FE 71 Solar-MT,2018,MT,92500,3000,Diesel,Hidup,Surabaya,245000000
+OLX-949473264,Honda,Civic,1.5 ES Bensin-AT,2016,AT,72500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-949390353,Daihatsu,Sigra,1.2 X Deluxe Bensin-AT,2025,AT,7500,1500,Bensin,Hidup,Sidoarjo,148000000
+OLX-949320432,BMW,330i,2.0 M Sport Bensin-AT,2024,AT,12500,2000,Bensin,Hidup,Surabaya,919000000
+OLX-948872515,Toyota,Agya,1.2 G Bensin-AT,2015,AT,172500,1500,Bensin,Hidup,Sidoarjo,92999000
+OLX-949486704,Toyota,Alphard,2.4 S C PS Bensin-AT,2017,AT,97500,3000,Bensin,Hidup,Surabaya,515000000
+OLX-949486690,Wuling,Cortez,1.5S T Lux+ Bensin-AT,2021,CVT,72500,1500,Bensin,Hidup,Surabaya,130000000
+OLX-949486628,Honda,HR-V,1.5 S Bensin-AT,2022,AT,62500,1500,Bensin,Hidup,Surabaya,194000000
+OLX-949486616,Honda,Civic,1.5 ES Bensin-AT,2016,AT,67500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-949486558,Mazda,3,2.0 Skyactive-G Hatchback Bensin-AT,2024,AT,32500,2000,Bensin,Hidup,Mojokerto,495000000
+OLX-949486268,Toyota,Alphard,2.5 G Bensin-AT,2022,AT,42500,3000,Bensin,Hidup,Surabaya,685000000
+OLX-949486226,Toyota,Sienta,1.5 G Bensin-MT,2016,MT,102500,1500,Bensin,Hidup,Surabaya,130000000
+OLX-949486190,Daihatsu,Ayla,1.0 M Bensin-MT,2020,MT,92500,1500,Bensin,Hidup,Kediri,105000000
+OLX-949486085,Daihatsu,Gran max,1.5 AC&PS Bensin-MT,2022,MT,87500,1500,Bensin,Hidup,Surabaya,152000000
+OLX-949081130,Daihatsu,Sirion,1.3 Bensin-AT,2013,AT,97500,1500,Bensin,Hidup,Sidoarjo,89999000
+OLX-947418597,Daihatsu,Gran max,1.5 Blind Van Bensin-MT,2022,MT,127500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-948168575,Toyota,Kijang Innova,2.4 G Solar-AT,2013,AT,102500,1500,Diesel,Hidup,Surabaya,229000000
+OLX-947418428,Nissan,Juke,1.5 Bensin-AT,2013,AT,122500,1500,Bensin,Hidup,Surabaya,119000000
+OLX-942860715,Honda,Brio,1.2 E Bensin-AT,2014,AT,117500,1500,Bensin,Hidup,Surabaya,109000000
+OLX-949485398,Mazda,CX-9,2.5 Bensin-AT,2019,AT,57500,3000,Bensin,Hidup,Surabaya,379000000
+OLX-949113265,Daihatsu,Xenia,1.5 R Deluxe Bensin-MT,2024,MT,12500,1500,Bensin,Hidup,Sidoarjo,212000000
+OLX-949357428,Toyota,Kijang Innova,2.4 V Solar-AT,2017,AT,152500,3000,Diesel,Hidup,Surabaya,295000000
+OLX-946977223,Toyota,Yaris,1.5 G Bensin-AT,2015,AT,127500,1500,Bensin,Hidup,Probolinggo,144500000
+OLX-949379371,Honda,HR-V,1.5 Turbo RS Bensin-AT,2024,AT,32500,1500,Bensin,Hidup,Surabaya,375000000
+OLX-940611394,Suzuki,Grand vitara,1.5 GX Hybrid-AT,2023,AT,22500,2000,Hybrid,Hidup,Surabaya,285000000
+OLX-948829480,Ford,Fiesta,1.0 EcoBoost S Bensin-AT,2015,AT,87500,1500,Bensin,Hidup,Surabaya,119000000
+OLX-949484935,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2019,AT,67500,1500,Diesel,Hidup,Surabaya,410000000
+OLX-949482181,Toyota,Rush,1.5 TRD Sportivo Bensin-MT,2018,MT,62500,1500,Bensin,Hidup,Malang,200000000
+OLX-949484893,Suzuki,Swift,Standard,2008,AT,177500,1500,Bensin,Hidup,Malang,95000000
+OLX-949484768,Honda,BR-V,1.5 Prestige Bensin-AT,2022,AT,97500,2000,Bensin,Hidup,Sidoarjo,207000000
+OLX-949484755,Toyota,Raize,1.0 GR Sport TSS Two Tone Bensin-AT,2021,AT,52500,1500,Bensin,Hidup,Sidoarjo,195000000
+OLX-949484708,Honda,Jazz,1.5 RS Bensin-AT,2011,AT,152500,1500,Bensin,Hidup,Bojonegoro,130000000
+OLX-949224659,Toyota,Vellfire,2.5 G Bensin-AT,2020,AT,67500,3000,Bensin,Hidup,Surabaya,650000000
+OLX-949272169,Mercedes-Benz,C200,2.0 Avantgarde Bensin-AT,2016,AT,27500,1500,Bensin,Hidup,Surabaya,315000000
+OLX-949484668,Suzuki,Grand vitara,1.5 GX Hybrid-AT,2023,AT,42500,1500,Hybrid,Hidup,Surabaya,280000000
+OLX-949285525,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2023,AT,27500,3000,Diesel,Hidup,Mojokerto,485000000
+OLX-949484660,Mini,3 Door,2.0 Cooper S Bensin-AT,2025,AT,2500,1500,Listrik,Hidup,Jakarta Utara,915000000
+OLX-949285561,Honda,Odyssey,2.4 Prestige Bensin-AT,2014,AT,97500,3000,Bensin,Hidup,Surabaya,229000000
+OLX-949294083,Toyota,Camry,2.5 V Bensin-AT,2022,AT,37500,3000,Bensin,Hidup,Surabaya,369000000
+OLX-948238733,Nissan,Grand livina,1.5 X-Gear Bensin-AT,2017,AT,97500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-949288087,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2021,AT,62500,1500,Diesel,Hidup,Malang,440000000
+OLX-949082288,Daihatsu,Terios,1.5 TX Bensin-MT,2011,MT,97500,2000,Bensin,Hidup,Sidoarjo,114999000
+OLX-949164938,Honda,Brio,1.2 RS Urbanite Edition Bensin-AT,2023,CVT,37500,1500,Bensin,Hidup,Surabaya,187000000
+OLX-949394789,Honda,Brio,1.2 New E Bensin-AT,2024,AT,17500,1500,Bensin,Hidup,Malang,177000000
+OLX-949484573,Toyota,GR Yaris,1.6L Turbocharger Bensin-MT,2021,MT,17500,1500,Bensin,Hidup,Malang,875000000
+OLX-947999886,Honda,Brio,1.2 RS Bensin-AT,2019,AT,67500,1500,Bensin,Hidup,Surabaya,155000000
+OLX-945847138,Honda,Jazz,1.5 RS Bensin-AT,2009,AT,147500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-947322632,Honda,Mobilio,1.5 E Bensin-MT,2017,MT,87500,1500,Bensin,Hidup,Surabaya,133000000
+OLX-947686390,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2012,AT,132500,3000,Diesel,Hidup,Surabaya,215000000
+OLX-949484392,Toyota,Calya,1.2 G Bensin-MT,2017,MT,7500,1500,Bensin,Hidup,Mojokerto,90000000
+OLX-949484365,Toyota,Vellfire,2.5 G Bensin-AT,2019,AT,47500,3000,Bensin,Hidup,Surabaya,600000000
+OLX-948167428,Toyota,Kijang Innova,2.4 G Solar-MT,2018,MT,92500,3000,Diesel,Hidup,Surabaya,279000000
+OLX-949484310,Honda,CR-V,1.5 Turbo Prestige Bensin-AT,2018,AT,47500,1500,Bensin,Hidup,Surabaya,296000000
+OLX-949484306,Suzuki,Ertiga,1.5 GX Bensin-MT,2014,MT,132500,1500,Bensin,Hidup,Jember,128000000
+OLX-949295273,Mercedes-Benz,GLC200,2.0 AMG Line Bensin-AT,2020,AT,27500,2000,Bensin,Hidup,Surabaya,635000000
+OLX-949484284,Honda,BR-V,1.5 Prestige Bensin-AT,2016,AT,117500,1500,Bensin,Hidup,Surabaya,153000000
+OLX-949484270,Honda,CR-V,2.0 i-VTEC Bensin-AT,2022,AT,37500,2000,Bensin,Hidup,Surabaya,330000000
+OLX-949484256,Mitsubishi,Pajero Sport,2.4 Dakar 4x4 Solar-AT,2018,AT,92500,3000,Diesel,Hidup,Sumenep,430000000
+OLX-949484081,Toyota,Yaris,1.5 E Bensin-MT,2013,MT,137500,1500,Bensin,Hidup,Surabaya,120000000
+OLX-949483975,Honda,Brio Satya,1.2 E Bensin-AT,2021,AT,37500,1500,Bensin,Hidup,Sidoarjo,165000000
+OLX-949161204,Mitsubishi,Xpander,1.5 Ultimate Bensin-AT,2022,AT,67500,1500,Bensin,Hidup,Surabaya,242000000
+OLX-949283924,Suzuki,Ertiga,1.5 New Cruise Hybrid-AT,2024,AT,12500,2000,Hybrid,Hidup,Surabaya,216999000
+OLX-949176651,Toyota,Rush,1.5 GR Sport Bensin-MT,2024,MT,2500,1500,Bensin,Hidup,Malang,255000000
+OLX-949410914,Isuzu,Panther,2.5 LM Solar-MT,2007,MT,102500,3000,Diesel,Hidup,Surabaya,88000000
+OLX-949079242,Nissan,Juke,1.5 RX Bensin-AT,2012,AT,62500,2000,Bensin,Hidup,Surabaya,117500000
+OLX-949483680,Toyota,Avanza,1.5 G Bensin-MT,2022,MT,57500,1500,Bensin,Hidup,Sidoarjo,170000000
+OLX-944684702,Toyota,Alphard,3.0 V Bensin-AT,2003,AT,92500,3000,Bensin,Hidup,Surabaya,95000000
+OLX-949483595,Honda,Mobilio,1.5 RS Bensin-AT,2018,AT,157500,1500,Bensin,Hidup,Surabaya,160000000
+OLX-949078685,Honda,Mobilio,1.5 E Bensin-AT,2014,AT,97500,1500,Bensin,Hidup,Sidoarjo,124999000
+OLX-949483368,Mitsubishi,Xpander,1.5 New Ultimate Bensin-AT,2022,AT,42500,2000,Bensin,Hidup,Sidoarjo,243000000
+OLX-949483311,Toyota,Kijang Innova,2.4 Venturer Solar-AT,2022,AT,37500,3000,Diesel,Hidup,Surabaya,458000000
+OLX-949483303,Toyota,Raize,1.2 G Bensin-MT,2022,MT,72500,1500,Bensin,Hidup,Pasuruan,180000000
+OLX-945296730,Nissan,Grand livina,1.5 XV Facelift Bensin-MT,2018,MT,112500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-949483243,Mitsubishi,Pajero Sport,Standard,2020,AT,32500,3000,Diesel,Hidup,Surabaya,435000000
+OLX-948903485,Honda,CR-V,1.5 Turbo Prestige Bensin-AT,2020,AT,57500,3000,Bensin,Hidup,Malang,319000000
+OLX-949483122,Toyota,Agya,1.0 G Bensin-AT,2015,AT,102500,1500,Bensin,Hidup,Sidoarjo,92999000
+OLX-948976311,Toyota,Kijang Innova,2.0 Zenix Q HV CVT TSS Modellista Hybrid-AT,2023,CVT,27500,3000,Hybrid,Hidup,Sidoarjo,489999000
+OLX-948869736,Daihatsu,Terios,1.5 R Deluxe Bensin-AT,2019,AT,137500,1500,Bensin,Hidup,Sidoarjo,182999000
+OLX-949483021,Toyota,Avanza,1.3 E Bensin-MT,2013,MT,102500,1500,Bensin,Hidup,Sidoarjo,104999000
+OLX-949482950,Honda,Accord,2.4 VTI-L Bensin-AT,2012,AT,92500,3000,Bensin,Hidup,Sidoarjo,137999000
+OLX-948716107,Toyota,Vellfire,2.5 ZG Bensin-AT,2017,AT,47500,3000,Bensin,Hidup,Surabaya,599000000
+OLX-948579058,Toyota,Lain-lain,Lain-lain-AT,2021,AT,67500,3000,Diesel,Hidup,Surabaya,425000000
+OLX-948424556,Jeep,Sahara,Lain-lain-AT,2012,AT,72500,3000,Bensin,Hidup,Surabaya,685000000
+OLX-949452567,Honda,Brio,1.3 E Bensin-AT,2019,AT,62500,1500,Bensin,Hidup,Surabaya,127000000
+OLX-949482877,Toyota,Kijang,2.4 LGX Solar-MT,2002,MT,282500,3000,Diesel,Hidup,Kediri,98000000
+OLX-949482820,Nissan,X-Trail,2.5 XT Bensin-AT,2010,AT,117500,1500,Bensin,Hidup,Surabaya,94000000
+OLX-949482754,Toyota,Kijang Innova,2.4 G Solar-MT,2025,MT,22500,3000,Diesel,Hidup,Malang,338000000
+OLX-949482738,Toyota,Kijang Innova,2.0 G Bensin-AT,2017,AT,87500,2000,Bensin,Hidup,Madiun,230000000
+OLX-946723066,Honda,Brio Satya,1.2 E Bensin-AT,2024,AT,7500,1500,Bensin,Hidup,Mojokerto,185000000
+OLX-949482452,Daihatsu,Terios,1.5 ADVENTURE R Bensin-MT,2016,MT,92500,2000,Bensin,Hidup,Pasuruan,145000000
+OLX-948848955,Suzuki,Baleno,Hatchback-AT,2025,AT,12500,1500,Bensin,Hidup,Surabaya,234000000
+OLX-948859974,Toyota,Kijang Innova,2.4 G Solar-AT,2024,AT,27500,3000,Diesel,Hidup,Surabaya,375000000
+OLX-949426781,Honda,Jazz,1.5 S Bensin-AT,2017,AT,112500,1500,Bensin,Hidup,Lamongan,150000000
+OLX-949482152,Honda,Odyssey,2.4 Prestige Bensin-AT,2014,AT,62500,3000,Bensin,Hidup,Surabaya,265000000
+OLX-949482142,BMW,320i,2.0 F30 Sport Bensin-AT,2015,AT,97500,2000,Bensin,Hidup,Surabaya,325000000
+OLX-949179251,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2023,CVT,47500,2000,Bensin,Hidup,Surabaya,360000000
+OLX-949392654,GWM,Tank 300,2.4 4x4 Solar-AT,2026,AT,2500,3000,Diesel,Hidup,Surabaya,600000000
+OLX-949481975,Toyota,HILUX,2.5 V Solar-AT,2016,AT,107500,3000,Diesel,Hidup,Malang,340000000
+OLX-949481961,Mitsubishi,Xpander,1.5 GLX Bensin-MT,2019,MT,82500,1500,Bensin,Mati,Lamongan,140000000
+OLX-949078499,Suzuki,SX4,1.5 X-Over Bensin-MT,2011,MT,82500,1500,Bensin,Mati,Surabaya,92000000
+OLX-949452557,Daihatsu,Terios,1.5 TX Bensin-MT,2013,MT,132500,1500,Bensin,Hidup,Mojokerto,127000000
+OLX-949346630,Honda,Freed,1.5 E Bensin-AT,2011,AT,97500,1500,Bensin,Hidup,Surabaya,106000000
+OLX-949236059,BMW,520i,2.0 M Sport Bensin-AT,2024,AT,7500,2000,Bensin,Hidup,Surabaya,1129000000
+OLX-949481932,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2025,CVT,12500,2000,Bensin,Hidup,Malang,388000000
+OLX-948855788,Mercedes-Benz,C240,2.4 sunroof elegant Bensin-AT,2002,AT,117500,1500,Bensin,Hidup,Sidoarjo,72000000
+OLX-949481881,Subaru,BRZ,2.4 Eyesight Bensin-AT,2022,AT,7500,3000,Bensin,Hidup,Surabaya,715000000
+OLX-949481874,Honda,HR-V,E CVT-AT,2019,CVT,62500,1500,Bensin,Hidup,Malang,210000000
+OLX-949481788,Honda,Jazz,1.5 S Bensin-AT,2017,AT,122500,1500,Bensin,Hidup,Sidoarjo,169000000
+OLX-933754383,Mazda,CX-5,2.5 Elite Bensin-AT,2019,AT,67500,3000,Bensin,Hidup,Surabaya,299000000
+OLX-944469816,Toyota,Kijang Innova,2.4 V Solar-AT,2019,AT,87500,3000,Diesel,Hidup,Surabaya,335000000
+OLX-949481726,Kia,Rio,1.4 Bensin-MT,2013,MT,182500,1500,Bensin,Hidup,Sidoarjo,90000000
+OLX-948849871,Wuling,Confero S,1.5 C Lux Bensin-MT,2023,MT,47500,1500,Bensin,Hidup,Surabaya,104500000
+OLX-949174394,BMW,528i,2.0 Luxury Bensin-AT,2016,AT,57500,2000,Bensin,Hidup,Surabaya,295000000
+OLX-949174387,Toyota,Avanza,1.3 G Bensin-MT,2017,MT,117500,1500,Bensin,Hidup,Surabaya,140000000
+OLX-949174381,Mazda,2,1.5 GT Bensin-AT,2020,AT,42500,1500,Bensin,Hidup,Surabaya,200000000
+OLX-949174377,Mitsubishi,Xpander,1.5 Ultimate Bensin-AT,2019,AT,77500,1500,Bensin,Hidup,Surabaya,205000000
+OLX-949174372,Toyota,Agya,1.2 GR Sport Bensin-AT,2022,AT,32500,1500,Bensin,Hidup,Surabaya,135000000
+OLX-949076518,Honda,Brio,1.2 E Bensin-AT,2023,CVT,27500,1500,Bensin,Hidup,Sidoarjo,155000000
+OLX-949076514,Toyota,Yaris,1.5 E Bensin-AT,2013,AT,162500,1500,Bensin,Hidup,Sidoarjo,115000000
+OLX-949151976,Mazda,6,2.5 Elite Estate Bensin-AT,2020,AT,62500,3000,Bensin,Hidup,Surabaya,400000000
+OLX-949423293,Toyota,Vios,1.5 G Bensin-AT,2016,AT,97500,1500,Bensin,Hidup,Malang,138000000
+OLX-949416394,Toyota,Avanza,1.3 New G Bensin-AT,2019,AT,162500,1500,Bensin,Hidup,Malang,159000000
+OLX-949355971,Mitsubishi,Xpander,1.5 Sport Bensin-AT,2020,AT,142500,1500,Bensin,Hidup,Surabaya,192000000
+OLX-949076504,Honda,City,1.5 E Bensin-AT,2018,AT,62500,1500,Bensin,Hidup,Surabaya,185000000
+OLX-949015767,Honda,Brio Satya,1.2 E Bensin-AT,2017,CVT,72500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-949481370,Mazda,CX-30,2.0 Touring Bensin-AT,2020,AT,77500,2000,Bensin,Hidup,Surabaya,280000000
+OLX-949481367,Toyota,Camry,2.5 V Bensin-AT,2013,AT,107500,3000,Bensin,Hidup,Surabaya,150000000
+OLX-949481363,Wuling,Cortez,1.8 C Lux Plus Bensin-AT,2018,AT,152500,2000,Bensin,Hidup,Surabaya,115000000
+OLX-949481356,Daihatsu,Ayla,1.2 R Bensin-AT,2020,AT,82500,1500,Bensin,Hidup,Surabaya,115000000
+OLX-948061167,Mercedes-Benz,S400L,3.0 Exclusive Bensin-AT,2014,AT,37500,3000,Bensin,Hidup,Surabaya,538000000
+OLX-947407975,Audi,A6,2.0 TFSI Bensin-AT,2013,AT,57500,2000,Bensin,Hidup,Surabaya,168000000
+OLX-949480488,Honda,Brio,1.2 RS Bensin-AT,2016,AT,117500,1500,Bensin,Hidup,Surabaya,124900000
+OLX-949480155,Toyota,Calya,1.2 G Bensin-MT,2017,MT,27500,1500,Bensin,Hidup,Banyuwangi,83000000
+OLX-949173132,Toyota,Raize,1.0 GR Sport TSS Two Tone Bensin-AT,2022,AT,22500,1500,Bensin,Hidup,Sidoarjo,219000000
+OLX-949479959,Toyota,Fortuner,2.8 4x2 GR Sport DSL Solar-AT,2022,AT,62500,3000,Diesel,Hidup,Surabaya,460000000
+OLX-949479956,Toyota,Kijang Innova,2.4 G Solar-AT,2019,AT,107500,3000,Diesel,Hidup,Surabaya,292000000
+OLX-949479876,Toyota,Agya,1.2 New G Bensin-AT,2023,AT,47500,1500,Bensin,Hidup,Malang,148000000
+OLX-949048810,Kia,Sportage,2.0 Bensin-AT,2005,AT,157500,2000,Bensin,Hidup,Surabaya,65000000
+OLX-949395340,Toyota,Camry,L Hybrid-AT,2021,AT,27500,3000,Bensin,Hidup,Surabaya,415000000
+OLX-949232689,Mitsubishi,Xpander,1.5 New Cross Premium Package Bensin-AT,2023,AT,42500,1500,Bensin,Hidup,Surabaya,283000000
+OLX-949262667,Toyota,Kijang Innova,2.0 G Luxury Bensin-MT,2014,MT,122500,2000,Bensin,Hidup,Malang,177000000
+OLX-949479823,Toyota,Agya,1.2 GR Sport Bensin-MT,2021,MT,87500,1500,Bensin,Hidup,Malang,125000000
+OLX-949479763,Honda,Brio Satya,1.2 S Bensin-MT,2023,MT,17500,1500,Bensin,Hidup,Malang,147000000
+OLX-949479668,Toyota,Rush,1.5 GR Sport Bensin-AT,2022,AT,37500,1500,Bensin,Hidup,Malang,241000000
+OLX-949479620,Honda,Accord,2.4 VTI-L Bensin-MT,2007,MT,112500,3000,Bensin,Hidup,Surabaya,75000000
+OLX-949479584,Toyota,Vellfire,2.5 G Bensin-AT,2016,AT,77500,3000,Bensin,Hidup,Surabaya,395000000
+OLX-949479566,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2022,CVT,17500,1500,Bensin,Hidup,Malang,357000000
+OLX-949479475,Mitsubishi,Xpander,1.5 Sport Bensin-MT,2022,MT,87500,1500,Bensin,Hidup,Malang,209000000
+OLX-949453103,Honda,CR-V,2.4 Prestige Bensin-AT,2013,AT,142500,3000,Bensin,Hidup,Surabaya,150000000
+OLX-949479400,Toyota,Fortuner,2.8 4x2 GR Sport DSL Solar-AT,2023,AT,67500,1500,Diesel,Hidup,Malang,478000000
+OLX-948092528,Toyota,Kijang Innova,2.4 Venturer Solar-AT,2018,AT,77500,3000,Diesel,Hidup,Malang,392000000
+OLX-933761281,Toyota,Alphard,2.5 G Bensin-AT,2022,AT,47500,1500,Bensin,Hidup,Malang,782000000
+OLX-949479206,Toyota,Avanza,Standard,2010,MT,137500,1500,Bensin,Hidup,Sidoarjo,105000000
+OLX-946347489,Toyota,Alphard,2.5 G Bensin-AT,2022,AT,67500,1500,Bensin,Hidup,Malang,786000000
+OLX-949479094,Toyota,Avanza,1.3 E Bensin-MT,2018,MT,300000,1500,Bensin,Hidup,Surabaya,115000000
+OLX-949478858,Toyota,Yaris,1.5 TRD Sportivo Bensin-AT,2016,AT,72500,1500,Bensin,Hidup,Surabaya,163000000
+OLX-949478854,Mazda,CX-5,Standard,2014,AT,137500,3000,Bensin,Hidup,Surabaya,129000000
+OLX-948603463,Honda,Freed,1.5 E Bensin-AT,2013,AT,132500,1500,Bensin,Hidup,Surabaya,145000000
+OLX-949284239,Toyota,Kijang Innova,2.4 G Solar-AT,2017,AT,97500,3000,Diesel,Hidup,Surabaya,289999000
+OLX-949407676,Lexus,RX300,2.0 F-Sport Bensin-AT,2018,AT,42500,3000,Bensin,Hidup,Surabaya,675000000
+OLX-935296877,BMW,M4,3.0 Bensin-AT,2023,AT,7500,3000,Bensin,Hidup,Surabaya,2500000000
+OLX-949478603,Toyota,Raize,1.0 GR Sport Two Tone Bensin-AT,2022,AT,22500,1500,Bensin,Hidup,Surabaya,219000000
+OLX-949478562,Toyota,Raize,1.0 GR Sport Two Tone Bensin-AT,2023,AT,42500,1500,Bensin,Hidup,Sidoarjo,215000000
+OLX-946372966,Suzuki,Karimun,1.0 GL Bensin-MT,2018,MT,132500,1500,Bensin,Hidup,Pamekasan,83000000
+OLX-949478502,Hyundai,Stargazer,1.5 Prime Bensin-AT,2023,AT,27500,1500,Bensin,Hidup,Surabaya,216000000
+OLX-949478443,Suzuki,Ertiga,1.4 GX Bensin-MT,2014,MT,92500,1500,Bensin,Hidup,Surabaya,105000000
+OLX-949478370,Suzuki,Baleno,Hatchback-AT,2023,AT,37500,1500,Bensin,Hidup,Surabaya,217500000
+OLX-949478329,Toyota,HILUX,2.4 Rangga Pick-Up High Solar-AT,2024,AT,7500,3000,Diesel,Hidup,Surabaya,285000000
+OLX-949478288,Suzuki,Ertiga,1.5 Sport Bensin-AT,2021,AT,52500,1500,Bensin,Hidup,Sidoarjo,205000000
+OLX-948693989,Toyota,Avanza,1.5 Luxury Veloz Bensin-MT,2022,MT,72500,2000,Bensin,Mati,Sidoarjo,195000000
+OLX-949478054,Honda,Jazz,1.5 New RS Bensin-AT,2019,AT,32500,1500,Bensin,Hidup,Sidoarjo,250000000
+OLX-949477961,Toyota,Fortuner,2.8 4x2 GR Sport DSL Solar-AT,2023,AT,37500,3000,Diesel,Hidup,Surabaya,485000000
+OLX-949477896,Daihatsu,Xenia,1.3 Xi SPORTY Bensin-MT,2010,MT,92500,1500,Bensin,Hidup,Surabaya,73000000
+OLX-949477776,Honda,WR-V,1.5 RS Sensing Two Tone Bensin-AT,2023,AT,32500,1500,Bensin,Hidup,Surabaya,245000000
+OLX-949477661,Mitsubishi,Xpander,1.5 Cross Premium Package Bensin-AT,2022,AT,67500,1500,Bensin,Hidup,Sidoarjo,240000000
+OLX-949477655,Suzuki,Katana,1.0 GX Bensin-MT,1997,MT,167500,1000,Bensin,Hidup,Sidoarjo,99000000
+OLX-949477623,Mercedes-Benz,GL400,3.0 Exclusive Bensin-AT,2014,AT,17500,3000,Bensin,Hidup,Surabaya,275000000
+OLX-949164580,Mitsubishi,Mirage,1.2 GLS Bensin-AT,2017,AT,102500,1500,Bensin,Hidup,Surabaya,114000000
+OLX-949305088,Toyota,Kijang,1.8 LGX Bensin-MT,2005,MT,92500,2000,Bensin,Hidup,Surabaya,60000000
+OLX-949394367,Mazda,3,2.0 Skyactive-G Hatchback Bensin-AT,2023,AT,27500,3000,Bensin,Hidup,Surabaya,475000000
+OLX-949346397,Daihatsu,Ayla,1.0 X Bensin-AT,2023,AT,47500,1500,Bensin,Hidup,Surabaya,123000000
+OLX-949477583,Toyota,Rush,1.5 TRD Sportivo Ultimo Bensin-AT,2021,AT,92500,1500,Bensin,Hidup,Surabaya,206000000
+OLX-949477529,Toyota,Fortuner,2.4 VRZ TRD Solar-AT,2019,AT,102500,3000,Diesel,Hidup,Sidoarjo,389000000
+OLX-949477491,Toyota,Kijang Innova,2.4 G Solar-AT,2019,AT,107500,3000,Diesel,Hidup,Surabaya,315000000
+OLX-949477452,Honda,Elysion,2.4 Prestige Bensin-AT,2008,AT,102500,3000,Bensin,Hidup,Surabaya,150000000
+OLX-949477451,Honda,Accord,2.4 VTI-L Bensin-AT,2014,AT,92500,3000,Bensin,Hidup,Surabaya,175000000
+OLX-949477424,Nissan,Terrano,2.4 Spirit S1 Bensin-MT,2002,MT,27500,3000,Bensin,Hidup,Lamongan,60000000
+OLX-949477374,Chevrolet,Trooper,2.3 Solar-MT,1991,MT,300000,1500,Diesel,Hidup,Surabaya,122000000
+OLX-949477288,Toyota,Kijang Innova,2.4 G Solar-AT,2012,AT,142500,3000,Diesel,Hidup,Gresik,205000000
+OLX-945811281,Toyota,Fortuner,2.5 G TRD Solar-AT,2015,AT,97500,3000,Diesel,Hidup,Surabaya,315000000
+OLX-949477027,Hyundai,Creta,1.5 Style IVT Bensin-AT,2023,AT,42500,1500,Bensin,Hidup,Surabaya,245000000
+OLX-948352080,Nissan,Terrano,2.4 Spirit S3 Bensin-MT,2005,MT,157500,3000,Bensin,Hidup,Malang,89000000
+OLX-949477010,Isuzu,Panther,2.5 LV Turbo Solar-MT,2008,MT,102500,3000,Diesel,Hidup,Madiun,139000000
+OLX-949476947,Mazda,Biante,2.0 Skyactive Bensin-AT,2015,AT,57500,3000,Bensin,Hidup,Surabaya,150000000
+OLX-949324951,Honda,Mobilio,1.5 E Bensin-MT,2016,MT,157500,1500,Bensin,Mati,Surabaya,98000000
+OLX-949476637,Wuling,Almaz RS,1.5 Exclusive 7-Seater Bensin-AT,2021,AT,42500,1500,Bensin,Hidup,Sidoarjo,200000000
+OLX-949476541,Daihatsu,Gran max,1.3 Blind Van Bensin-MT,2021,MT,117500,1500,Bensin,Hidup,Surabaya,115000000
+OLX-949449420,Toyota,Kijang Innova,2.0 G Bensin-AT,2018,AT,97500,2000,Bensin,Hidup,Surabaya,239000000
+OLX-949366679,Toyota,Kijang Innova,2.0 V Bensin-AT,2017,AT,67500,2000,Bensin,Hidup,Surabaya,252500000
+OLX-949174134,Toyota,Kijang Innova,2.4 V Solar-AT,2021,AT,82500,3000,Diesel,Hidup,Surabaya,350000000
+OLX-949352814,Hyundai,Palisade,2.2 Signature Solar-AT,2022,AT,32500,3000,Diesel,Hidup,Surabaya,520000000
+OLX-949476413,Daihatsu,Sigra,1.2 New X Bensin-MT,2022,MT,82500,1500,Bensin,Hidup,Sidoarjo,123000000
+OLX-948325881,Toyota,Avanza,1.3 E Bensin-MT,2025,MT,32500,1500,Bensin,Hidup,Surabaya,195000000
+OLX-949476274,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2017,AT,122500,3000,Diesel,Hidup,Malang,360000000
+OLX-949476269,Toyota,Harrier,2.0 XU60 Bensin-AT,2014,AT,72500,2000,Bensin,Hidup,Surabaya,245000000
+OLX-949476261,Toyota,Kijang Innova,2.4 G Solar-AT,2022,AT,82500,3000,Diesel,Hidup,Sidoarjo,315000000
+OLX-949476235,Toyota,FT86,2.0 Bensin-AT,2018,AT,82500,2000,Bensin,Hidup,Sidoarjo,575000000
+OLX-949476143,Toyota,Avanza,1.5 G Bensin-MT,2014,MT,247500,1500,Bensin,Hidup,Surabaya,130000000
+OLX-949476113,Toyota,Kijang,2.5 Solar-MT,2000,MT,17500,1500,Diesel,Hidup,Surabaya,80000000
+OLX-948805025,Honda,Brio,1.2 E Bensin-AT,2019,AT,72500,1500,Bensin,Hidup,Surabaya,145500000
+OLX-949169238,Daihatsu,Grand Xenia,1.3 X Bensin-MT,2017,MT,117500,1500,Bensin,Hidup,Surabaya,122500000
+OLX-949475604,Toyota,Kijang Innova,2.0 G Bensin-AT,2019,AT,157500,1500,Bensin,Hidup,Surabaya,235000000
+OLX-949475593,Toyota,Fortuner,2.7 G Bensin-AT,2005,AT,272500,3000,Bensin,Hidup,Surabaya,105000000
+OLX-947734312,Suzuki,Ertiga,1.5 GX Hybrid-AT,2023,AT,17500,1500,Hybrid,Hidup,Surabaya,232500000
+OLX-949144530,Mitsubishi,Xpander,1.5 Exceed Bensin-AT,2019,AT,82500,1500,Bensin,Hidup,Surabaya,195000000
+OLX-948769194,Suzuki,Baleno,1.5 Bensin-AT,2022,AT,37500,1500,Bensin,Hidup,Madiun,229000000
+OLX-948768572,Suzuki,Baleno,1.5 Bensin-AT,2022,AT,32500,1500,Bensin,Hidup,Surabaya,229000000
+OLX-949391065,BYD,Seal,Premium Listrik-AT,2024,AT,22500,1500,Listrik,Hidup,Malang,445000000
+OLX-949436864,Hyundai,Stargazer,1.5 Trend Essential Bensin-AT,2025,AT,7500,1500,Bensin,Hidup,Surabaya,215000000
+OLX-949393007,Honda,Mobilio,1.5 RS Bensin-AT,2014,AT,117500,1500,Bensin,Hidup,Malang,139000000
+OLX-949228657,Honda,CR-V,1.5 Black Edition Bensin-AT,2022,AT,97500,1500,Bensin,Hidup,Surabaya,409000000
+OLX-946557001,Honda,Brio,1.2 New E Bensin-AT,2021,AT,57500,1500,Bensin,Hidup,Surabaya,158000000
+OLX-949275961,Mitsubishi,Xpander,1.5 Cross Premium Package Bensin-AT,2021,AT,57500,1500,Bensin,Hidup,Malang,247500000
+OLX-948168959,Mercedes-Benz,280S,2.8 Bensin-MT,1986,MT,2500,3000,Bensin,Hidup,Surabaya,399000000
+OLX-948763091,Wuling,Almaz RS,2.0 Hybrid-AT,2023,AT,57500,2000,Hybrid,Hidup,Surabaya,245000000
+OLX-948787983,Honda,Accord,2.0 RS e:HEV Hybrid-AT,2024,AT,17500,2000,Bensin,Hidup,Surabaya,699000000
+OLX-948980599,Suzuki,Karimun Wagon R,1.0 GX Bensin-MT,2014,MT,87500,1000,Bensin,Hidup,Surabaya,88500000
+OLX-940542997,Toyota,Yaris,1.5 TRD Sportivo Bensin-MT,2017,MT,97500,1500,Bensin,Hidup,Gresik,182000000
+OLX-949475204,Nissan,Serena,2.0 Highway Star Bensin-AT,2018,AT,87500,1500,Bensin,Hidup,Surabaya,135000000
+OLX-949168904,Wuling,Cortez,1.5 CT Lux Bensin-AT,2019,AT,47500,2000,Bensin,Hidup,Surabaya,130000000
+OLX-949475086,Honda,Civic,1.5 ES Bensin-AT,2016,CVT,67500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-949474936,Nissan,March,1.2 L Bensin-AT,2016,AT,72500,1500,Bensin,Hidup,Gresik,104000000
+OLX-949474925,Mercedes-Benz,B180,mobil-bekas-honda-civic-1.7-bensin-at,2011,AT,117500,1500,Bensin,Hidup,Malang,105000000
+OLX-949474890,Suzuki,Ertiga,1.5 GX Hybrid-AT,2023,AT,17500,1500,Hybrid,Hidup,Sidoarjo,220000000
+OLX-949474777,Kia,Seltos,1.4 EX Plus Bensin-AT,2020,AT,52500,1500,Bensin,Hidup,Gresik,230000000
+OLX-949474727,Nissan,Serena,2.0 Highway Star Bensin-AT,2019,AT,62500,2000,Bensin,Hidup,Sidoarjo,220000000
+OLX-949474661,Suzuki,Karimun estillo,Lain-lain-MT,2011,MT,122500,1500,Bensin,Hidup,Surabaya,65000000
+OLX-948959946,Toyota,Avanza,1.5 Veloz Q Bensin-AT,2022,AT,57500,1500,Bensin,Hidup,Malang,230000000
+OLX-949053154,Toyota,Kijang Innova,2.4 Solar-AT,2021,AT,157500,3000,Diesel,Hidup,Surabaya,385000000
+OLX-949345905,Honda,Freed,1.5 S Bensin-AT,2014,AT,82500,1500,Bensin,Hidup,Surabaya,134000000
+OLX-948958518,Toyota,Land Cruiser,4.5 V8 D 4D Solar-AT,2012,AT,37500,3000,Diesel,Hidup,Surabaya,1175000000
+OLX-949474648,Nissan,Juke,1.5 RX Bensin-AT,2013,AT,162500,2000,Bensin,Hidup,Malang,120000000
+OLX-949474532,Nissan,Serena,2.0 Highway Star Bensin-AT,2018,AT,67500,1500,Bensin,Hidup,Sidoarjo,125000000
+OLX-949474365,Daihatsu,Gran max,1.3 Blind Van Bensin-MT,2021,MT,117500,1500,Bensin,Hidup,Surabaya,115000000
+OLX-948750952,Suzuki,Carry Pick-up,Lain-lain-MT,2022,MT,202500,3000,Diesel,Hidup,Surabaya,200000000
+OLX-949474014,Honda,Civic Hatchback,1.5 E Bensin-AT,2018,AT,32500,1500,Bensin,Hidup,Mojokerto,380000000
+OLX-949473924,Toyota,Voxy,2.0 Bensin-AT,2022,AT,67500,2000,Bensin,Hidup,Surabaya,365000000
+OLX-949473784,Mitsubishi,Xpander,1.5 Cross Bensin-AT,2021,AT,67500,2000,Bensin,Hidup,Surabaya,235000000
+OLX-949473733,Honda,Brio Satya,1.2 E Bensin-AT,2019,AT,37500,1500,Bensin,Hidup,Surabaya,147000000
+OLX-949167983,Toyota,Kijang Innova,2.0 Zenix G CVT Bensin-AT,2023,CVT,57500,2000,Bensin,Hidup,Surabaya,345000000
+OLX-949473626,Wuling,Air EV,Lite 300 Long Range Listrik-AT,2025,AT,12500,1000,Listrik,Hidup,Surabaya,135000000
+OLX-949473550,Toyota,Voxy,Standard,2022,AT,67500,2000,Bensin,Hidup,Surabaya,365000000
+OLX-949473346,BYD,Atto 1,Premium Listrik-AT,2025,AT,12500,1000,Listrik,Hidup,Surabaya,208000000
+OLX-949473025,Geely,EX2,Max Listrik-AT,2026,AT,2500,1000,Listrik,Hidup,Surabaya,249000000
+OLX-949473003,Toyota,Fortuner,2.4 TRD Sportivo Solar-AT,2019,AT,92500,3000,Diesel,Hidup,Surabaya,385000000
+OLX-949472934,Suzuki,Grand vitara,1.5 GX Hybrid-AT,2024,AT,27500,1500,Bensin,Hidup,Surabaya,290000020
+OLX-946768565,Toyota,Kijang Innova,2.4 G Solar-MT,2018,MT,97500,3000,Diesel,Hidup,Sidoarjo,285000000
+OLX-949467597,Daihatsu,Gran Max MB,1.5 D Face To Face Bensin-MT,2018,MT,117500,1500,Bensin,Hidup,Malang,137500000
+OLX-949017302,Daihatsu,Ayla,1.2 R Deluxe Bensin-AT,2022,AT,42500,1500,Bensin,Hidup,Sidoarjo,134999000
+OLX-949410554,Honda,CR-V,2.4 Bensin-AT,2011,AT,102500,3000,Bensin,Hidup,Sidoarjo,119999000
+OLX-949472528,Toyota,Fortuner,2.5 G Turbo Solar-AT,2015,AT,157500,1500,Diesel,Hidup,Surabaya,360000000
+OLX-949472444,Isuzu,Panther,2.5 Smart LM Solar-MT,2017,MT,162500,3000,Diesel,Hidup,Surabaya,180000000
+OLX-949472343,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Ultimate Solar-AT,2023,AT,27500,3000,Diesel,Hidup,Sidoarjo,500000000
+OLX-949472111,Honda,HR-V,1.5 S Bensin-AT,2021,AT,47500,1500,Bensin,Hidup,Sidoarjo,203000000
+OLX-948138784,Chevrolet,Classic,2.2 Solar-MT,1986,MT,2500,3000,Diesel,Hidup,Malang,399000000
+OLX-949471683,Suzuki,Ertiga,1.4 GX Bensin-AT,2017,AT,122500,1500,Bensin,Hidup,Surabaya,150000000
+OLX-949471540,Suzuki,Ertiga,1.4 GX Bensin-AT,2017,AT,117500,1500,Bensin,Hidup,Surabaya,150000000
+OLX-949471393,Isuzu,New Panther,Lain-lain-MT,2017,MT,187500,3000,Diesel,Hidup,Surabaya,180000000
+OLX-949471272,Toyota,Kijang Innova,2.0 Zenix G HV CVT Hybrid-AT,2024,CVT,57500,2000,Hybrid,Hidup,Surabaya,378000000
+OLX-949471189,Mitsubishi,Xpander,1.5 New Ultimate Bensin-AT,2024,AT,42500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-949471136,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2024,CVT,17500,2000,Bensin,Hidup,Surabaya,377000000
+OLX-949065444,Daihatsu,Ayla,1.2 R Bensin-AT,2020,AT,82500,1500,Bensin,Hidup,Sidoarjo,115000000
+OLX-948783837,Honda,Integra,1.6 Bensin-MT,1998,MT,2500,2000,Bensin,Hidup,Surabaya,275000000
+OLX-949470766,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2024,AT,37500,3000,Diesel,Hidup,Sidoarjo,515000000
+OLX-949470588,Daihatsu,Xenia,1.0 Li Bensin-MT,2010,MT,117500,1500,Bensin,Hidup,Sidoarjo,80000000
+OLX-949470478,Toyota,Yaris,1.5 G Bensin-MT,2014,MT,117500,1500,Bensin,Hidup,Pasuruan,127000000
+OLX-949433226,Hyundai,Creta,1.5 Prime IVT Two tone Bensin-AT,2022,AT,47500,1500,Bensin,Hidup,Surabaya,259000000
+OLX-949439904,Toyota,Calya,1.2 G Bensin-AT,2025,AT,7500,1500,Bensin,Hidup,Sidoarjo,169000000
+OLX-949394248,Daihatsu,Xenia,1.3 X Bensin-AT,2023,AT,52500,1500,Bensin,Hidup,Surabaya,171000000
+OLX-947069839,Daihatsu,Gran max,1.5 D Bensin-MT,2014,MT,102500,1500,Bensin,Hidup,Sidoarjo,109000000
+OLX-949470392,Toyota,Kijang Innova,2.4 G Solar-AT,2009,AT,97500,3000,Diesel,Hidup,Surabaya,305000000
+OLX-949470355,Jaecoo,J5,Listrik-AT,2026,AT,2500,1000,Listrik,Hidup,Surabaya,313500000
+OLX-949470345,Toyota,Kijang,2.4 LGX Solar-MT,2001,MT,117500,3000,Diesel,Hidup,Malang,105000000
+OLX-949470344,Hyundai,Creta,1.5 Alpha Bensin-AT,2024,AT,2500,1500,Bensin,Hidup,Surabaya,330000000
+OLX-948675193,Toyota,Yaris,1.5 TRD Sportivo Bensin-AT,2018,AT,37500,1500,Bensin,Hidup,Surabaya,165000000
+OLX-949470182,Honda,CR-V,1.5 Turbo Prestige Bensin-AT,2021,AT,67500,1500,Bensin,Hidup,Surabaya,388000000
+OLX-949469944,Nissan,Grand livina,1.5 SV Bensin-MT,2013,MT,82500,1500,Bensin,Hidup,Malang,90000000
+OLX-949469882,Hyundai,Stargazer,1.5 Prime Bensin-AT,2022,AT,87500,1500,Bensin,Hidup,Surabaya,183000000
+OLX-949469713,Daihatsu,Terios,1.5 R Bensin-MT,2019,MT,122500,1500,Bensin,Hidup,Malang,175000000
+OLX-949469680,Honda,Mobilio,1.5 E Bensin-MT,2019,MT,57500,1500,Bensin,Hidup,Blitar,168000000
+OLX-949469511,Honda,Mobilio,1.5 Prestige Bensin-AT,2014,AT,97500,2000,Bensin,Hidup,Sidoarjo,124999000
+OLX-949469427,Chery,Tiggo 8 Pro,2.0 Premium Bensin-AT,2023,AT,27500,2000,Bensin,Hidup,Surabaya,265000000
+OLX-949469328,Honda,Mobilio,1.5 RS Bensin-AT,2014,CVT,107500,1500,Bensin,Hidup,Lamongan,140000000
+OLX-949063778,BMW,320i,2.0 Luxury Bensin-AT,2015,AT,52500,2000,Bensin,Hidup,Surabaya,265000000
+OLX-949469269,Honda,Accord,Standard,2011,AT,117500,1500,Bensin,Hidup,Surabaya,123000000
+OLX-948644560,Toyota,Alphard,2.5 G Bensin-AT,2021,AT,67500,3000,Bensin,Hidup,Surabaya,680000000
+OLX-949355151,Toyota,Yaris Cross,1.5 S GR HV TSS Two Tone Hybrid-AT,2023,AT,67500,1500,Bensin,Hidup,Sidoarjo,309000000
+OLX-949369907,Honda,CR-V,1.5 Turbo Bensin-AT,2019,AT,52500,2000,Bensin,Hidup,Surabaya,295000000
+OLX-949383757,Mitsubishi,Triton,2.4 Double Cabin Ultimate Solar-AT,2022,AT,7500,3000,Diesel,Hidup,Surabaya,440000000
+OLX-949468893,Daihatsu,Xenia,1.3 New X Bensin-MT,2022,MT,97500,1500,Bensin,Hidup,Surabaya,158000000
+OLX-949063343,Mini,Cooper S Countryman,1.6 Bensin-AT,2011,AT,62500,2000,Bensin,Hidup,Surabaya,260000000
+OLX-948969143,Daihatsu,Ayla,1.2 R Bensin-AT,2017,AT,72500,1500,Bensin,Hidup,Surabaya,122000000
+OLX-949468454,Toyota,Kijang Innova,2.4 G Solar-MT,2020,MT,117500,1500,Diesel,Hidup,Surabaya,285000000
+OLX-948840082,Toyota,Rush,1.5 G Bensin-AT,2021,AT,92500,1500,Bensin,Hidup,Surabaya,220000000
+OLX-949468430,Toyota,Avanza,1.5 G Bensin-AT,2024,AT,42500,1500,Bensin,Hidup,Surabaya,225000000
+OLX-949468429,Daihatsu,Gran max,1.3 D Bensin-MT,2014,MT,77500,1500,Bensin,Hidup,Surabaya,107500000
+OLX-947502452,Daihatsu,Terios,1.5 R Bensin-MT,2020,MT,52500,1500,Bensin,Hidup,Surabaya,182500000
+OLX-949468397,Toyota,Avanza,1.5 New Veloz Q Bensin-AT,2023,AT,27500,1500,Bensin,Hidup,Surabaya,232500000
+OLX-948961545,Honda,Mobilio,1.5 E Bensin-AT,2017,AT,102500,2000,Bensin,Hidup,Sidoarjo,144999000
+OLX-949468073,Honda,Civic,1.5 ES Bensin-AT,2016,AT,67500,1500,Bensin,Hidup,Surabaya,265000000
+OLX-949467965,Toyota,Kijang Innova,2.4 V Solar-AT,2017,AT,97500,3000,Diesel,Hidup,Malang,325000000
+OLX-949467947,Honda,HR-V,1.5 New S Bensin-AT,2018,AT,67500,1500,Bensin,Hidup,Surabaya,180000000
+OLX-949467782,Honda,Freed,1.5 S Bensin-AT,2014,AT,117500,1500,Bensin,Hidup,Surabaya,137500000
+OLX-949273656,Mini,Cooper Countryman,1.5 Bensin-AT,2020,AT,42500,1500,Bensin,Hidup,Surabaya,389000000
+OLX-948354885,Toyota,Hiace,2.5 Commuter Solar-MT,2014,MT,247500,3000,Diesel,Hidup,Surabaya,291111000
+OLX-949141842,Toyota,Kijang Innova,2.4 G Solar-MT,2018,MT,122500,3000,Diesel,Hidup,Blitar,310000000
+OLX-945972085,Mercedes-Benz,GLS400,3.0 AMG Bensin-AT,2018,AT,42500,3000,Bensin,Hidup,Surabaya,650000000
+OLX-949467742,Toyota,Kijang Innova,2.4 Venturer Solar-AT,2022,AT,67500,1500,Diesel,Hidup,Surabaya,399000000
+OLX-949467700,Toyota,Calya,1.2 G Bensin-AT,2018,AT,117500,1500,Bensin,Hidup,Sidoarjo,120000000
+OLX-949467619,Toyota,Calya,1.2 G Bensin-AT,2017,AT,157500,1500,Bensin,Hidup,Surabaya,102000000
+OLX-949467615,Mitsubishi,Destinator,1.5 Ultimate Premium Bensin-AT,2026,AT,2500,2000,Bensin,Hidup,Surabaya,455000000
+OLX-949467582,Toyota,Raize,1.0 Turbo G Bensin-AT,2025,AT,17500,1500,Bensin,Hidup,Sidoarjo,250000000
+OLX-948672838,Mazda,CX-5,2.5 Grand Touring Bensin-AT,2020,AT,57500,3000,Bensin,Hidup,Surabaya,310000000
+OLX-949467456,Toyota,Kijang Innova,2.4 G Solar-MT,2017,MT,92500,3000,Diesel,Hidup,Surabaya,300000000
+OLX-949467340,Honda,BR-V,1.5 PRESTIGE N7X Edition Bensin-AT,2024,AT,17500,1500,Bensin,Hidup,Sidoarjo,285000000
+OLX-948803411,Mitsubishi,Xpander,1.5 New Ultimate Bensin-AT,2022,AT,32500,1500,Bensin,Hidup,Lumajang,243000000
+OLX-949467201,Toyota,Agya,1.0 G Bensin-MT,2014,MT,67500,1000,Bensin,Hidup,Gresik,88000000
+OLX-948805649,Toyota,Vios,1.5 G Bensin-AT,2008,AT,300000,1500,Bensin,Hidup,Mojokerto,80000000
+OLX-949467122,Toyota,Fortuner,2.8 4x2 GR Sport DSL Solar-AT,2023,AT,47500,1500,Diesel,Hidup,Surabaya,465000000
+OLX-949467099,Peugeot,2008,1.2 Bensin-AT,2022,AT,22500,1500,Bensin,Hidup,Surabaya,220000000
+OLX-949467096,Isuzu,Panther,2.5 LV Solar-MT,2012,MT,107500,3000,Diesel,Hidup,Surabaya,175000000
+OLX-948150247,Toyota,Kijang Innova,2.4 V Solar-AT,2019,AT,97500,3000,Diesel,Hidup,Sidoarjo,335000000
+OLX-949232206,Toyota,Calya,1.2 G Bensin-AT,2017,AT,67500,1500,Bensin,Hidup,Surabaya,106000000
+OLX-949406263,BMW,320i,2.0 N20 Bensin-AT,2015,AT,87500,1500,Bensin,Hidup,Sidoarjo,225000000
+OLX-949279894,Nissan,X-Trail,2.5 Bensin-AT,2015,AT,117500,3000,Bensin,Hidup,Malang,138500000
+OLX-949467020,Honda,Brio Satya,1.2 E Bensin-MT,2019,MT,162500,1500,Bensin,Hidup,Surabaya,130000000
+OLX-949271483,Toyota,Avanza,1.5 Veloz Bensin-AT,2013,AT,87500,1500,Bensin,Hidup,Surabaya,130000000
+OLX-948150906,Toyota,Kijang Innova,2.5 G Solar-AT,2011,AT,297500,3000,Diesel,Hidup,Sidoarjo,214000000
+OLX-949466652,Toyota,Avanza,Standard,2014,MT,117500,1500,Bensin,Hidup,Surabaya,125000000
+OLX-949271440,Honda,Jazz,1.5 RS Bensin-AT,2013,AT,137500,1500,Bensin,Hidup,Surabaya,145000000
+OLX-949466407,Honda,WR-V,1.5 RS With Honda Sensing Bensin-AT,2024,AT,22500,1500,Bensin,Hidup,Surabaya,253000000
+OLX-949466278,Chevrolet,Trax,1.4 Turbo LTZ Bensin-AT,2017,AT,42500,1500,Bensin,Hidup,Surabaya,140000000
+OLX-949466226,Hyundai,STARGAZER Cartenz,1.5 Trend Bensin-AT,2026,AT,0,1500,Bensin,Hidup,Surabaya,227500000
+OLX-949466216,Honda,Mobilio,1.5 New RS Bensin-AT,2015,AT,107500,1500,Bensin,Hidup,Malang,100000000
+OLX-949466174,Mercedes-Benz,E300,Standard,2012,AT,67500,1500,Bensin,Hidup,Malang,220000000
+OLX-948815835,Honda,Jazz,1.5 S Bensin-AT,2011,AT,122500,1500,Bensin,Hidup,Surabaya,117000000
+OLX-948829788,Toyota,Avanza,1.3 E Bensin-MT,2017,MT,147500,1500,Bensin,Hidup,Surabaya,115000000
+OLX-948829955,Toyota,Kijang Innova,2.5 E Solar-MT,2013,MT,127500,3000,Diesel,Hidup,Surabaya,200000000
+OLX-949465945,Chevrolet,Aveo,1.4 LT Bensin-AT,2013,AT,117500,1500,Bensin,Hidup,Surabaya,77500000
+OLX-948786853,Mitsubishi,L300,2.5 Solar-MT,2019,MT,57500,3000,Diesel,Hidup,Surabaya,170000000
+OLX-949454593,Toyota,Yaris,1.5 E Bensin-MT,2010,MT,112500,1500,Bensin,Hidup,Malang,98000000
+OLX-948968799,Mazda,CX-9,2.5 SKYACTIV-G Bensin-AT,2018,AT,62500,3000,Bensin,Hidup,Surakarta,375000000
+OLX-949394566,Toyota,Yaris Cross,1.5 S GR HV TSS Two Tone Hybrid-AT,2023,AT,17500,1500,Hybrid,Hidup,Malang,365000000
+OLX-947424663,BMW,X1,1.5 sDrive18i xLine Bensin-AT,2022,AT,2500,1500,Bensin,Hidup,Bandung,599000000
+OLX-948835973,Daihatsu,Gran Max MB,1.5 D Face To Face Bensin-MT,2017,MT,112500,1500,Bensin,Hidup,Surabaya,140000000
+OLX-949465774,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2022,CVT,62500,2000,Bensin,Hidup,Surabaya,350000000
+OLX-949465763,Toyota,Kijang Innova,2.0 V Luxury Bensin-AT,2018,AT,92500,2000,Bensin,Hidup,Blitar,265000000
+OLX-949465693,Toyota,Fortuner,2.4 VRZ TRD Solar-AT,2019,AT,47500,3000,Diesel,Hidup,Surabaya,387500000
+OLX-948113136,Daihatsu,Gran max,1.3 BV Bensin-MT,2021,MT,102500,1500,Bensin,Hidup,Sidoarjo,119000000
+OLX-949465645,Kia,Picanto,1.2 Bensin-MT,2011,MT,127500,1500,Bensin,Hidup,Malang,77000000
+OLX-949465572,Honda,City,1.5 E Bensin-AT,2019,CVT,107500,1500,Bensin,Hidup,Sidoarjo,170900000
+OLX-948787258,Mini,Cooper S Hatchback,2.0 Bensin-AT,2023,AT,7500,2000,Bensin,Hidup,Surabaya,796000000
+OLX-946767324,Toyota,Voxy,2.0 Bensin-AT,2022,AT,72500,3000,Bensin,Hidup,Sidoarjo,359000000
+OLX-949465236,Nissan,Grand livina,1.5 XV Special Version Bensin-AT,2016,AT,97500,1500,Bensin,Hidup,Malang,117750000
+OLX-949465179,Toyota,Etios Valco,Standard,2015,MT,57500,1500,Bensin,Hidup,Surabaya,110000000
+OLX-949464920,Kia,Lain-lain,Lain-lain-AT,2021,AT,37500,2000,Bensin,Hidup,Surabaya,200000000
+OLX-949464673,Mitsubishi,Xpander,1.5 Cross Premium Package Bensin-AT,2023,AT,32500,1500,Bensin,Hidup,Surabaya,280000000
+OLX-949464362,Honda,HR-V,E Special Editon-AT,2023,AT,37500,2000,Bensin,Hidup,Surabaya,320000000
+OLX-949464343,Honda,Mobilio,1.5 E Bensin-AT,2017,CVT,77500,2000,Bensin,Hidup,Surabaya,138000000
+OLX-949464235,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2013,AT,197500,3000,Diesel,Hidup,Surabaya,229000000
+OLX-949410307,Nissan,X-Trail,2.5 Bensin-AT,2016,AT,92500,3000,Bensin,Hidup,Surabaya,162000000
+OLX-948351522,Mitsubishi,Xpander,1.5 Cross Bensin-AT,2022,AT,62500,2000,Bensin,Hidup,Surabaya,260000000
+OLX-949142854,Suzuki,Ertiga,1.5 Hybrid GX Bensin-AT,2023,AT,52500,1500,Hybrid,Hidup,Malang,210000000
+OLX-949464032,Nissan,Serena,2.0 Highway Star Bensin-AT,2019,AT,62500,3000,Bensin,Hidup,Surabaya,220000000
+OLX-948175607,Daihatsu,Ayla,1.0 M Bensin-MT,2018,MT,117500,1000,Bensin,Mati,Sidoarjo,85000000
+OLX-949463794,Mitsubishi,Xpander,1.5 Cross Premium Package Bensin-AT,2021,CVT,67500,1500,Bensin,Hidup,Jombang,240000000
+OLX-949463777,Honda,Mobilio,1.5 RS Bensin-AT,2016,AT,87500,1500,Bensin,Hidup,Gresik,149000000
+OLX-947204290,Mitsubishi,Lain-lain,Standard,2022,AT,62500,2000,Bensin,Hidup,Surabaya,260000000
+OLX-947420626,Suzuki,Baleno,1.5 Bensin-AT,2023,AT,7500,2000,Bensin,Hidup,Surabaya,235000000
+OLX-947450817,Toyota,Lain-lain,Lain-lain-AT,2025,AT,32500,3000,Diesel,Hidup,Surabaya,375000000
+OLX-949463730,Toyota,Avanza,1.3 New E Bensin-MT,2023,MT,32500,1500,Bensin,Hidup,Jombang,188000000
+OLX-948102959,Toyota,Lain-lain,Standard,2023,AT,32500,3000,Bensin,Hidup,Surabaya,485000000
+OLX-949463701,Toyota,Kijang Innova,2.4 V Solar-AT,2018,AT,127500,3000,Diesel,Mati,Sidoarjo,290000000
+OLX-949463699,Toyota,Vellfire,2.4 GS Bensin-AT,2013,AT,300000,1500,Bensin,Hidup,Probolinggo,260000000
+OLX-949463640,BYD,Atto 1,Premium Listrik-AT,2025,AT,7500,1000,Listrik,Hidup,Surabaya,235000000
+OLX-949463577,Toyota,Kijang Innova,2.4 V Solar-AT,2018,AT,72500,3000,Diesel,Hidup,Surabaya,345000000
+OLX-949463558,Honda,CR-V,2.4 Bensin-AT,2005,AT,187500,3000,Bensin,Hidup,Sidoarjo,77500000
+OLX-949463507,Toyota,Voxy,2.0 Bensin-AT,2018,AT,22500,2000,Bensin,Hidup,Surabaya,299000000
+OLX-949463445,Toyota,Rush,1.5 S Bensin-MT,2013,MT,57500,1500,Bensin,Hidup,Jombang,147500000
+OLX-949429551,Toyota,Avanza,1.5 G Bensin-AT,2023,AT,62500,1500,Bensin,Hidup,Surabaya,194000000
+OLX-949388746,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2018,AT,117500,3000,Diesel,Hidup,Surabaya,360000000
+OLX-949434951,Honda,Brio Satya,1.2 E Bensin-AT,2021,AT,62500,1500,Bensin,Hidup,Surabaya,144000000
+OLX-948729812,Suzuki,Ignis,1.2 GX AGS Bensin-AT,2018,AT,72500,1500,Bensin,Hidup,Surabaya,150000000
+OLX-949463344,Honda,Freed,1.5 E Bensin-AT,2015,AT,62500,1500,Bensin,Hidup,Jombang,175000000
+OLX-936444121,Toyota,Kijang Innova,2.0 G Bensin-AT,2008,AT,187500,2000,Bensin,Mati,Sidoarjo,95000000
+OLX-944440089,Daihatsu,Xenia,1.0 D Bensin-MT,2016,MT,117500,1000,Bensin,Hidup,Sidoarjo,110000000
+OLX-949462825,Mini Cooper,Mini Cooper,Lain-lain-AT,2023,AT,12500,2000,Bensin,Hidup,Surabaya,720000000
+OLX-947969114,Kia,Picanto,1.2 SE Bensin-AT,2013,AT,102500,1500,Bensin,Hidup,Surabaya,88000000
+OLX-949462503,Honda,Brio,1.2 RS Bensin-MT,2016,MT,137500,1500,Bensin,Hidup,Surabaya,135000000
+OLX-925213874,Honda,HR-V,mobil-bekas-honda-hr-v-1.5l-s-at,2017,AT,117500,2000,Bensin,Hidup,Sidoarjo,195000000
+OLX-948819885,Honda,Civic,1.5 RS Bensin-AT,2024,AT,12500,2000,Bensin,Hidup,Madiun,460000000
+OLX-949462235,Toyota,Avanza,1.5 New G Bensin-AT,2024,AT,37500,1500,Bensin,Hidup,Surabaya,225000000
+OLX-949462191,Suzuki,Jimny,1.5 Two Tone Bensin-AT,2019,AT,12500,1500,Bensin,Hidup,Surabaya,380000000
+OLX-949462176,Isuzu,Panther,2.5 LM Solar-MT,2004,MT,102500,3000,Diesel,Hidup,Madiun,99000000
+OLX-949462115,Nissan,X-Trail,2.5 Autech Bensin-AT,2005,AT,17500,3000,Bensin,Hidup,Sidoarjo,58000000
+OLX-949462096,Daihatsu,Ayla,1.0 X Bensin-AT,2013,AT,197500,1000,Bensin,Hidup,Surabaya,84000000
+OLX-948833570,Toyota,Rush,1.5 G Bensin-MT,2014,MT,107500,1500,Bensin,Hidup,Surabaya,128000000
+OLX-949461952,Toyota,Agya,1.0 G Bensin-AT,2023,CVT,57500,1500,Bensin,Hidup,Surabaya,149000000
+OLX-949168867,Toyota,Agya,1.0 G TRD Sportivo Bensin-MT,2016,MT,87500,1000,Bensin,Hidup,Surabaya,98000000
+OLX-946250467,Mazda,Biante,2.0 Skyactive Bensin-AT,2016,AT,137500,2000,Bensin,Hidup,Sidoarjo,150000000
+OLX-949320261,Mitsubishi,L300,2.5 Pickup Flatdeck Solar-MT,2021,MT,92500,3000,Diesel,Hidup,Surabaya,160000000
+OLX-949152184,BMW,X5,2.0 xDrive25d Solar-AT,2017,AT,92500,2000,Diesel,Hidup,Surabaya,375000000
+OLX-949461659,Suzuki,Ertiga,Standard,2024,AT,17500,1500,Hybrid,Hidup,Surabaya,229000000
+OLX-948168450,Honda,Freed,1.5 E Bensin-AT,2009,AT,137500,1500,Bensin,Hidup,Malang,115000000
+OLX-947006751,BMW,Z4,2.0 sDrive20i Bensin-AT,2013,AT,17500,2000,Bensin,Hidup,Surabaya,699000000
+OLX-949461537,Honda,Mobilio,1.5 E Bensin-AT,2019,AT,72500,1500,Bensin,Hidup,Surabaya,165000000
+OLX-949461515,Nissan,March,1.2 L Bensin-MT,2013,MT,122500,1500,Bensin,Hidup,Sidoarjo,75000000
+OLX-949461484,Toyota,Lain-lain,Standard,2016,MT,127500,3000,Diesel,Hidup,Ngawi,225000000
+OLX-949461445,Toyota,Kijang Innova,2.0 G Bensin-AT,2017,AT,47500,2000,Bensin,Hidup,Surabaya,240000000
+OLX-949461384,Toyota,Kijang Innova,2.0 V Bensin-AT,2019,AT,72500,2000,Bensin,Hidup,Surabaya,275000000
+OLX-948756582,Nissan,Grand livina,1.5 SV Facelift Bensin-AT,2016,AT,117500,1500,Bensin,Hidup,Surabaya,101000000
+OLX-948811424,Mitsubishi,Xpander,1.5 Ultimate Bensin-AT,2024,AT,32500,1500,Bensin,Hidup,Surabaya,260000000
+OLX-948500067,Honda,CR-V,1.5 Turbo Prestige Bensin-AT,2020,AT,117500,1500,Bensin,Hidup,Surabaya,305000000
+OLX-948656958,Nissan,Serena,2.0 Highway Star Bensin-AT,2017,AT,87500,2000,Bensin,Hidup,Surabaya,165000000
+OLX-948515131,Mazda,CX-5,2.5 Grand Touring Bensin-AT,2021,AT,47500,3000,Bensin,Hidup,Surabaya,330000000
+OLX-949461132,Honda,Brio,1.2 New RS Bensin-AT,2024,AT,57500,1500,Diesel,Hidup,Sidoarjo,173000000
+OLX-949461110,Hyundai,Santa Fe,2.2 CRDi Solar-AT,2015,AT,157500,3000,Diesel,Hidup,Sidoarjo,207000000
+OLX-949376446,Honda,CR-V,1.5 Turbo Prestige Bensin-AT,2022,AT,37500,2000,Bensin,Hidup,Surabaya,402000000
+OLX-948146364,Mitsubishi,Xpander,1.5 Cross Bensin-AT,2023,AT,32500,1500,Bensin,Hidup,Surabaya,285000000
+OLX-948947962,Toyota,Kijang Innova,2.4 Solar-MT,2013,MT,112500,3000,Diesel,Hidup,Surabaya,198000000
+OLX-948835601,Toyota,Avanza,1.5 Veloz Q TSS Bensin-AT,2023,AT,37500,2000,Bensin,Hidup,Surabaya,240000000
+OLX-949460854,Mitsubishi,Xpander,1.5 New Exceed Bensin-MT,2019,MT,27500,1500,Bensin,Hidup,Pamekasan,195000000
+OLX-923423271,Peugeot,3008,1.6 Allure Plus Bensin-AT,2022,AT,22500,2000,Bensin,Hidup,Surabaya,375000000
+OLX-947412275,Toyota,Alphard,2.5 G Bensin-AT,2009,AT,147500,3000,Bensin,Hidup,Malang,179500000
+OLX-948839336,Mazda,CX-5,2.5 Grand Touring Bensin-AT,2020,AT,107500,3000,Bensin,Hidup,Surabaya,249000000
+OLX-948320506,Daihatsu,Terios,1.5 TX Bensin-MT,2014,MT,107500,1500,Bensin,Hidup,Surabaya,120000000
+OLX-948343052,Honda,Brio,1.2 RS Bensin-AT,2020,AT,57500,1500,Bensin,Hidup,Surabaya,168000000
+OLX-948844213,Toyota,Rush,1.5 G Bensin-AT,2021,AT,92500,1500,Bensin,Hidup,Surabaya,220000000
+OLX-948977584,Toyota,Kijang Innova,2.0 Zenix V CVT Bensin-AT,2024,CVT,27500,2000,Bensin,Hidup,Sidoarjo,385000000
+OLX-949460210,Honda,CR-V,Standard,2009,AT,137500,1500,Bensin,Hidup,Surabaya,115000000
+OLX-948655434,Mitsubishi,Pajero Sport,2.4 Dakar 4x2 Solar-AT,2020,AT,27500,3000,Diesel,Hidup,Sidoarjo,414000000
+OLX-949460021,Honda,Mobilio,1.5 E Bensin-MT,2014,MT,112500,1500,Bensin,Hidup,Surabaya,120000000
+OLX-948827643,Daihatsu,Taft,2.8 4x4 Solar-MT,1999,MT,197500,3000,Diesel,Hidup,Surabaya,160000000
+OLX-949459512,Toyota,Avanza,1.5 New G Bensin-AT,2025,AT,12500,2000,Bensin,Hidup,Sidoarjo,230000000
+OLX-949459397,Honda,HR-V,Standard,2024,AT,17500,1500,Bensin,Hidup,Surabaya,350000000

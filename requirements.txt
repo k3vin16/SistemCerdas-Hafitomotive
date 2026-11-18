@@ -1,0 +1,7 @@
+﻿Django>=5.0,<6.0
+python-dotenv
+pandas
+numpy
+scikit-learn
+joblib
+whitenoise
